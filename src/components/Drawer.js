@@ -1,43 +1,3 @@
-// /* eslint-disable react/button-has-type */
-// import React, { useState } from 'react';
-// import { NavLink } from 'react-router-dom';
-// import { GiHamburgerMenu } from 'react-icons/gi';
-
-// export default function NavBar() {
-
-//   const links = [
-//     {
-//       id: 1,
-//       path: '/',
-//       text: 'Home',
-//     },
-//     {
-//       id: 2,
-//       path: '/about',
-//       text: 'About',
-//     },
-//   ];
-//   return (
-//    <nav className="navbar navbar-expand-sm  bg">
-//         <div className="container">
-//                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-//               <GiHamburgerMenu />
-//             </button>
-//             <div className="collapse navbar-collapse" id="navbarNav">
-//       <ul className="navbar-nav col-12  justify-content-end align-items-center">
-//         {links.map((link) => (
-//           <li key={link.id} className="nav-item bdr d-flex align-items-center px-3">
-//             <NavLink className="nav-Link pt-1"activeClassName="active-link"  to={link.path}>{link.text}</NavLink>
-//           </li>
-//         ))}
-//       </ul>
-//       </div>
-//       </div>
-//     </nav>
-//   );
-// }
-
-
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -62,12 +22,23 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import HomeIcon from '@mui/icons-material/Home';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { withStyles, makeStyles } from "@material-ui/core/styles";
+import '../styles/Drawer.css'
 import Project from './Project';
 import Home from './Home';
 import Contact from './Contact';
 const drawerWidth = 240;
-
+const useStyles = makeStyles({
+  root: {
+    padding: "0 0"
+  },
+  drawer: {
+    backgroundColor: "#fff !important",
+    color: "#000 !important",
+  },
+});
 function ResponsiveDrawer(props) {
+    const classes = useStyles();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const links = [
@@ -86,7 +57,33 @@ function ResponsiveDrawer(props) {
     {
       id: 3,
       path: '/contact',
-      text: 'contact',
+      text: 'Contact',
+      icon: <ContactPageIcon />,
+    }
+  ];
+   const socialMedia = [
+    {
+      id: 1,
+      url: 'https://twitter.com/dev_Peter_O',
+      text: 'Angelist',
+      icon: <HomeIcon />,
+    },
+    {
+      id: 2,
+      url: 'https://twitter.com/dev_Peter_O',
+      text: 'LinkedIn',
+      icon: <LinkedInIcon />,
+    },
+    {
+      id: 3,
+      url: 'https://twitter.com/dev_Peter_O',
+      text: 'Twitter',
+      icon: <TwitterIcon />,
+    },
+     {
+      id: 4,
+      url: 'https://twitter.com/dev_Peter_O',
+      text: 'Medium',
       icon: <ContactPageIcon />,
     }
   ];
@@ -96,14 +93,12 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div>
+         
       <Toolbar />
-               <IconButton onClick={handleDrawerToggle}>
-           Back
-          </IconButton>
       <Divider />
       <List>        {links.map((link) => (
         <ListItem button key={link.id}>
-     <NavLink className="d-flex"activeClassName="active-link"  to={link.path}>
+     <NavLink className="d-flex" activeClassName="active-link"  to={link.path}>
           
           <ListItemIcon>
             {link.icon}
@@ -114,22 +109,24 @@ function ResponsiveDrawer(props) {
  ))}
       </List>
       <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+       {socialMedia.map((link) => (
+        <ListItem button key={link.id}>
+     <a href={link.url} className="d-flex" activeClassName="active-link"  >
+          
+          <ListItemIcon>
+            {link.icon}
+          </ListItemIcon>
+          <ListItemText primary={link.text} />
+     </a>
+     </ListItem>
+ ))}
     </div>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
+    
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
@@ -138,6 +135,7 @@ function ResponsiveDrawer(props) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}
+        className = {classes.drawer}
       >
         <Toolbar>
           <IconButton
@@ -188,14 +186,16 @@ function ResponsiveDrawer(props) {
       </Box>
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+        sx={{ flexGrow: 1, p: 3, width: drawerWidth  }}
+      className={classes.root}
       >
         <Toolbar />
-                     <div className="App">
+                     <div className="container-fluid">
         <Routes>
           <Route path="/" element={<Home />} />
+          
           <Route path="/project" element={<Project />} />
-           <Route path={'/about'} element={<Contact />} />
+           <Route path={'/contact'} element={<Contact />} />
         </Routes>
   
       </div>

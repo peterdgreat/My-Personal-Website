@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
     return (
         <div>
-            Contact Page
+            <h1>Hello</h1>
         </div>
     )
 }
