@@ -23,6 +23,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { withStyles, makeStyles } from "@material-ui/core/styles";
+import Avatar from '@mui/material/Avatar';
+import peter from '../assets/slack.jpg'
 import '../styles/Drawer.css'
 import Project from './Project';
 import Home from './Home';
@@ -30,12 +32,28 @@ import Contact from './Contact';
 const drawerWidth = 240;
 const useStyles = makeStyles({
   root: {
-    padding: "0 0"
+    padding: "0 !important",
   },
   drawer: {
-    backgroundColor: "#fff !important",
-    color: "#000 !important",
+    backgroundColor: "#3E3C3C !important",
+    color: "#fff !important",
   },
+   nav: {
+    backgroundColor: "#3E3C3C !important",
+    color: "#fff !important",
+    height: "100%",
+  },
+  icon: {
+    color: "#fff !important",
+    textDecoration: "none",
+  },
+  // active: {
+  //       backgroundColor: "red !important",
+  //      "&:hover": {
+  //     backgroundColor: "red",
+  //   },
+  // }
+  
 });
 function ResponsiveDrawer(props) {
     const classes = useStyles();
@@ -59,6 +77,12 @@ function ResponsiveDrawer(props) {
       path: '/contact',
       text: 'Contact',
       icon: <ContactPageIcon />,
+    },
+    {
+      id: 4,
+      path: '/about',
+      text: 'About Me',
+      icon: <Avatar alt="Peter Ajayi" src={peter}  />,
     }
   ];
    const socialMedia = [
@@ -92,15 +116,15 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div>
+    <div  className={classes.nav}>
          
       <Toolbar />
       <Divider />
-      <List>        {links.map((link) => (
+      <List >        {links.map((link) => (
         <ListItem button key={link.id}>
-     <NavLink className="d-flex" activeClassName="active-link"  to={link.path}>
+     <NavLink     onClick={handleDrawerToggle} className={`d-flex ${classes.icon}`} activeClassName="active-link"  to={link.path}>
           
-          <ListItemIcon>
+          <ListItemIcon className={classes.icon}>
             {link.icon}
           </ListItemIcon>
           <ListItemText primary={link.text} />
@@ -111,9 +135,9 @@ function ResponsiveDrawer(props) {
       <Divider />
        {socialMedia.map((link) => (
         <ListItem button key={link.id}>
-     <a href={link.url} className="d-flex" activeClassName="active-link"  >
+     <a href={link.url} className={`d-flex ${classes.icon}`} activeClassName={classes.active}  >
           
-          <ListItemIcon>
+          <ListItemIcon  className={classes.icon}>
             {link.icon}
           </ListItemIcon>
           <ListItemText primary={link.text} />
@@ -148,7 +172,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Peter Ajayi
           </Typography>
         </Toolbar>
       </AppBar>
@@ -156,6 +180,7 @@ function ResponsiveDrawer(props) {
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
+       
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
@@ -205,10 +230,6 @@ function ResponsiveDrawer(props) {
 }
 
 ResponsiveDrawer.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
 

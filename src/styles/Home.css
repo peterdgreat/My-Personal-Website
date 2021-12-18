@@ -1,20 +1,33 @@
 
 .home-bg {
-    height: 100%;
-    width: 100%;
+    height: 100% !important;
+    color: #fff;
+    padding: 0;
+    margin :0;
 }
 .name {
+  font-family: Crete Round;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 81px;
+  color: #F55800;
+}
+
+.title {
   font-family: Inter;
-font-style: normal;
-font-weight: 800;
-font-size: 48px;
-line-height: 60px;
-/* or 125% */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+.description {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #F4F5F7;
 
-text-align: center;
-letter-spacing: 0.37px;
-
-/* Neutrals/N800 */
-
-color: #172B4D;
 }
