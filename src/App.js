@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 
 import { useDispatch } from 'react-redux';
-import { getRockets } from './redux/Rockets/rockets';
+import { getProjects } from './redux/projects/projects';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Drawer from './components/Drawer';
 
@@ -9,9 +9,9 @@ import './App.css';
 
 function App() {
 
-  const dispatchRocket = useDispatch();
+  const dispatch = useDispatch();
   useEffect(() => {
-    dispatchRocket(getRockets());
+    dispatch(getProjects());
   }, []);
 
   return (
