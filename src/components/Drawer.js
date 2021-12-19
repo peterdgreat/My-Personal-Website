@@ -6,12 +6,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -22,7 +20,7 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import HomeIcon from '@mui/icons-material/Home';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Avatar from '@mui/material/Avatar';
 import peter from '../assets/slack.jpg'
 import '../styles/Drawer.css'
@@ -47,12 +45,6 @@ const useStyles = makeStyles({
     color: "#fff !important",
     textDecoration: "none",
   },
-  // active: {
-  //       backgroundColor: "red !important",
-  //      "&:hover": {
-  //     backgroundColor: "red",
-  //   },
-  // }
   
 });
 function ResponsiveDrawer(props) {
@@ -122,7 +114,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List >        {links.map((link) => (
         <ListItem button key={link.id}>
-     <NavLink     onClick={handleDrawerToggle} className={`d-flex ${classes.icon}`} activeClassName="active-link"  to={link.path}>
+     <NavLink     onClick={handleDrawerToggle} className={`d-flex ${classes.icon}`}  to={link.path}>
           
           <ListItemIcon className={classes.icon}>
             {link.icon}
@@ -135,7 +127,7 @@ function ResponsiveDrawer(props) {
       <Divider />
        {socialMedia.map((link) => (
         <ListItem button key={link.id}>
-     <a href={link.url} className={`d-flex ${classes.icon}`} activeClassName={classes.active}  >
+     <a href={link.url} className={`d-flex ${classes.icon}`}  >
           
           <ListItemIcon  className={classes.icon}>
             {link.icon}
