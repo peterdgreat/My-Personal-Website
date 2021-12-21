@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import '../styles/Projects.css'
 import { useSelector } from 'react-redux';
-import {projectModalOpen} from '../redux/projects/projects'
+
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     backgroundColor: "#3E3C3C !important",
   },
   img : {
-    opacity : "0.1 !important",
+    opacity : "0.5 !important",
     transition : "all 0.5s ease-in-out",
      "&:hover": {
       opacity: "1 !important",
@@ -41,21 +41,22 @@ const useStyles = makeStyles({
      "&:hover": {
       opacity: "0 !important",
     },
+
  
   },
+      imgClass: {
+      objectFit: "contain !important",
+    },
      modal: {
-      background: '#3E3C3C !important',
-      opacity: "0.5 !important",
+      background: 'transparent !important',
+      opacity: "0.7 !important",
     },
     fallback: {
-        backgroundColor: '#fff !important',
+        backgroundColor: 'transparent !important',
         color: 'white',
         border: '3px solid #f1f1f1',
         maxWidth: '70%',
     },
-    root : {
-      backgroundColor: "#fff !important",
-    }
 });
 export default function Project() {
         const projects = useSelector(state => state.projectsReducer.projects)
@@ -63,8 +64,6 @@ export default function Project() {
   const initialState = []
   const [filtered, setFiltered] = React.useState(initialState);
   const handleOpen = (e) =>{
-    // dispatch(projectModalOpen(e.currentTarget.id));
-    // console.log(e.target.key);
     setFiltered(projects.filter(project => project.id === e.currentTarget.id));
     console.log(filtered);
   
@@ -78,7 +77,7 @@ export default function Project() {
         const matches = useMediaQuery('(min-width:1400px)');
     console.log(projects)
   return (
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center project">
     <ImageList  sx={{ width: 1200}} className={classes.spacing}>
  
       {matches && (<ImageListItem    className= {classes.imgWrapper} key="Subheader" cols={3}>
@@ -88,7 +87,7 @@ export default function Project() {
                
       
       {projects.map((project) => (
-        <>
+        <section section>
         <ImageListItem key={project.id} className= {classes.imgWrapper}>
            
    <img
@@ -103,14 +102,16 @@ export default function Project() {
             id={project.id}
             onClick={handleOpen}
           />
-        
         </ImageListItem>
 <ModalC 
-open={open} handleClose={handleClose} fallback={classes.fallback} modal={classes.modal}
 img={filtered[0]?.img}
-desc={filtered[0]?.description}
-root={classes.root}/>
-     </> ))}
+open={open} handleClose={handleClose}
+modal={classes.modal}
+imgClass={classes.imgClass}
+firstLetter={filtered[0]?.title[0]}
+title ={filtered[0]?.title}
+description={filtered[0]?.description}/>
+     </section> ))}
     </ImageList>
  </div> );
 }
