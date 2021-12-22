@@ -53,7 +53,7 @@ const initialState = {
     title: 'The Cocktail',
     details: 'This application is based on TheCocktailDB API',
     description: 'This application is based on TheCocktailDB API, Users Can Like and Unlike Cocktails, Users Can Also Comment and check the ingredients of the cocktail',
-    langs: ['Html', 'Css', 'Bootstrap', 'JavaScript', 'Webpack'],
+    langs: ['Html', 'Css', 'Bootstrap', 'JavaScript'],
     btn: 'see project',
     img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933594/cocktailjpg_hlfkrh.jpg',
     source: 'https://github.com/peterdgreat/TheCocktail',

@@ -22,6 +22,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from '@mui/material/Avatar';
+import {useLocation} from 'react-router-dom'
 import peter from '../assets/slack.jpg'
 import '../styles/Drawer.css'
 import Project from './Project';
@@ -45,9 +46,15 @@ const useStyles = makeStyles({
     color: "#fff !important",
     textDecoration: "none",
   },
+  overAllHeight: {
+     height: '100vh',
+     scrollBehavior: 'smooth',
+     overflowY: 'scroll',
+  }
   
 });
 function ResponsiveDrawer(props) {
+  const location = useLocation();
     const classes = useStyles();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -106,6 +113,7 @@ function ResponsiveDrawer(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  const classProj = location.pathname === '/project' ? classes.overAllHeight : '';
 
   const drawer = (
     <div  className={classes.nav}>
@@ -143,7 +151,7 @@ function ResponsiveDrawer(props) {
 
   return (
     
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }}  className = {classProj} >
       <CssBaseline />
       <AppBar
         position="fixed"

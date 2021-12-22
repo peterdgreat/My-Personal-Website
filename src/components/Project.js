@@ -1,5 +1,4 @@
 import React from 'react'
-import { useDispatch } from 'react-redux';
 import '../styles/Projects.css'
 import { useSelector } from 'react-redux';
 
@@ -10,7 +9,7 @@ import ListSubheader from '@mui/material/ListSubheader';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from "@material-ui/core/styles";
 import ModalC from './Modal';
-import { style } from '@mui/system';
+
 
 
 
@@ -57,6 +56,9 @@ const useStyles = makeStyles({
         border: '3px solid #f1f1f1',
         maxWidth: '70%',
     },
+    imgGrid : {
+      gridTemplateColumns: "repeat(3, 1fr) !important",
+    },
 });
 export default function Project() {
         const projects = useSelector(state => state.projectsReducer.projects)
@@ -74,21 +76,18 @@ export default function Project() {
   const handleClose = () => setOpen(false);
    const classes = useStyles();
  
-        const matches = useMediaQuery('(min-width:1400px)');
-    console.log(projects)
+        const matches = useMediaQuery('(min-width:900px)');
+        const mediaImg = matches  ? classes.imgGrid: '';
+
   return (
+    <>
+    <ListSubheader component="div" className="text-center"><h2>My Projects</h2></ListSubheader>
       <div className="d-flex justify-content-center project">
-    <ImageList  sx={{ width: 1200}} className={classes.spacing}>
- 
-      {matches && (<ImageListItem    className= {classes.imgWrapper} key="Subheader" cols={3}>
-  <ListSubheader component="div" className="text-center">My Projects</ListSubheader>
-      </ImageListItem>)
-          }
-               
-      
+            
+    <ImageList  sx={{ width: 1200}}  className= {`${classes.spacing} ${mediaImg}`} >
       {projects.map((project) => (
         <section section>
-        <ImageListItem key={project.id} className= {classes.imgWrapper}>
+        <ImageListItem key={project.id} className= {classes.imgWrapper} >
            
    <img
             src={project.img}
@@ -110,10 +109,12 @@ modal={classes.modal}
 imgClass={classes.imgClass}
 firstLetter={filtered[0]?.title[0]}
 title ={filtered[0]?.title}
-description={filtered[0]?.description}/>
+description={filtered[0]?.description}
+langs = {filtered[0]?.langs}/>
      </section> ))}
     </ImageList>
- </div> );
+ </div> 
+ </>);
 }
 
 
