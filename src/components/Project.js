@@ -86,8 +86,8 @@ export default function Project() {
             
     <ImageList  sx={{ width: 1200}}  className= {`${classes.spacing} ${mediaImg}`} >
       {projects.map((project) => (
-        <section section>
-        <ImageListItem key={project.id} className= {classes.imgWrapper} >
+        <div  key={project.id}>
+        <ImageListItem className= {classes.imgWrapper} >
            
    <img
             src={project.img}
@@ -110,8 +110,10 @@ imgClass={classes.imgClass}
 firstLetter={filtered[0]?.title[0]}
 title ={filtered[0]?.title}
 description={filtered[0]?.description}
-langs = {filtered[0]?.langs}/>
-     </section> ))}
+langs = {filtered[0]?.langs}
+id = {project.id}
+/>
+     </div> ))}
     </ImageList>
  </div> 
  </>);

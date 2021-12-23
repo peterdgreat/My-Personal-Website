@@ -36,6 +36,10 @@ export default function BasicModal(props) {
     description,
     langs,
   } = props;
+  const btn_1 = langs?.length > 0 ? langs[0] : "";
+  const btn_2 = langs?.length > 1 ? langs[1] : "";
+  const btn_3 = langs?.length > 2 ? langs[2] : "";
+  const btn_4 = langs?.length > 3 ? langs[3] : "";
 
   return (
     <Modal
@@ -50,7 +54,7 @@ export default function BasicModal(props) {
           <div className="d-flex justify-content-end pe-3 pt-2">
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               aria-label="Close"
               onClick={handleClose}
             ></button>
@@ -68,17 +72,20 @@ export default function BasicModal(props) {
           />
    <div className="d-flex justify-content-center">
 
-            <section className= "d-flex mb-3 ">
-              {langs?.map((lang) => (
-                <btn className="btn border btn-p"> {lang}</btn>
-              ))}
-            </section>
+            <div className= "d-flex mb-3 ">
+              
+                <button className="btn border btn-p" > {btn_1}</button>
+                <button className="btn border btn-p" > {btn_2}</button>
+                <button className="btn border btn-p" > {btn_3}</button>
+                {btn_4 ? <button className="btn border btn-p" > {btn_4}</button> : null}
+             
+            </div>
           </div>
           <CardMedia
             component="img"
             height="194"
             image={img}
-            alt="Paella dish"
+            alt={title}
             className={imgClass}
           />
           <CardContent>
