@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="container mt-5 ">
       <header className="d-flex flex-column justify-content-center align-items-center">
-        <h2 className="name mt-5">About me</h2>
+        <h2 className="name mt-5 proj-family">About me</h2>
         <p className="d-size">
           {' '}
           My biggest goal in life is to use software engineering to solve

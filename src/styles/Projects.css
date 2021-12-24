@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto');
+
+.proj-family {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
 .works {
   color: #fff;
 }
@@ -27,4 +33,3 @@
     padding: 12px !important;
   }
 }
-

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Projects.css';
 import { useSelector } from 'react-redux';
-
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -85,7 +84,7 @@ export default function Project() {
   return (
     <>
       <ListSubheader component="div" className="text-center">
-        <h2>My Projects</h2>
+        <h2 className="proj-family">My Projects</h2>
       </ListSubheader>
       <div className="d-flex justify-content-center project">
         <ImageList
@@ -102,7 +101,7 @@ export default function Project() {
                   className={classes.img}
                 />
                 <ImageListItemBar
-                  className={classes.seeProj}
+                  className={`${classes.seeProj} proj-family`}
                   title={project.btn}
                   id={project.id}
                   onClick={handleOpen}
