@@ -1,6 +1,7 @@
 .contact {
-    background-color: #fff;
+  background-color: #fff;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -42,6 +43,7 @@
   border: none;
   width: 100%;
 }
+
 .form textarea {
   width: 95%;
   height: 114px;
@@ -49,9 +51,12 @@
   background: #fbf8f7;
   padding: 12px;
 }
-textarea:focus, input:focus{
-    outline: none;
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
+
 .submit {
-    color: #fff;
+  color: #fff;
 }

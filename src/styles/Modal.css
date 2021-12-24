@@ -4,41 +4,40 @@ a:any-link {
 }
 
 .sp-btn {
- display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    text-decoration: none;
-font-family: Inter;
-background-color: #ff6B00;
-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: Inter;
+  background-color: #ff6b00;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
+
 .sp-btn:hover {
-  background-color: #FFF5E1;
-border: 1px solid #F55800;
-
-
-font-style: normal;
-font-weight: bold;
-color: #F55800 ;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  font-style: normal;
+  font-weight: bold;
+  color: #f55800;
 }
-.sp-btn:disabled {
- background: #F4F1F0;
-color: #5b5957;
 
+.sp-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }

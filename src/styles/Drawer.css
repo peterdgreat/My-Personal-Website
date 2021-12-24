@@ -1,9 +1,9 @@
 .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 0;
+  padding-left: 0;
 }
+
 .icon {
-  width :21px;
+  width: 21px;
   height: 17px;
-  
 }

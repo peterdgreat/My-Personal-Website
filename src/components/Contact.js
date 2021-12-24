@@ -1,22 +1,27 @@
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
-import "../styles/Contact.css";
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import '../styles/Contact.css';
+
 export default function Contact() {
-  const [state, handleSubmit] = useForm("xeqvpzae");
+  const [state, handleSubmit] = useForm('xeqvpzae');
   const handlesubmit = (e) => {
     handleSubmit(e);
     e.target.reset();
-  }
+  };
   return (
     <div className="contact">
-   
+
       <section className="contact-form" id="contact-section">
         <div className="interest">
-           {state.succeeded && <h2>Thanks for reaching out! I will get back to you as soon as possible</h2>}
-          {state.succeeded === false && <h2>
-            I'm always interested in hearing about new projects, so if you'd
+          {state.succeeded && (
+          <h2>Thanks for reaching out! I will get back to you as soon as possible</h2>
+          )}
+          {state.succeeded === false && (
+          <h2>
+            I am always interested in hearing about new projects, so if you would
             like to chat please get in touch.
-          </h2>}
+          </h2>
+          )}
         </div>
         <div>
           <form className="form " onSubmit={handlesubmit}>
@@ -56,7 +61,7 @@ export default function Contact() {
                   placeholder="Enter text here"
                   maxLength="500"
                   required
-                ></textarea>
+                />
                 <ValidationError
                   prefix="Comment"
                   field="comment"

@@ -1,14 +1,13 @@
 import { React, useEffect } from 'react';
 
 import { useDispatch } from 'react-redux';
-import { getProjects } from './redux/projects/projects';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { getProjects } from './redux/projects/projects';
 import Drawer from './components/Drawer';
 
 import './App.css';
 
 function App() {
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProjects());
@@ -16,10 +15,10 @@ function App() {
 
   return (
     <div>
-        <Router>
-<Drawer />
+      <Router>
+        <Drawer />
 
-    </Router>
+      </Router>
     </div>
   );
 }

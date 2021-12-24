@@ -1,13 +1,15 @@
 .css-10h3uxi {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    padding: 24px 0; 
-   width: 240px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 24px 0;
+  width: 240px;
 }
-html,body {
-    height: 100%;
-    background-color : #1C1A19 !important;
-    color: #fff !important;
+
+html,
+body {
+  height: 100%;
+  background-color: #1c1a19 !important;
+  color: #fff !important;
 }

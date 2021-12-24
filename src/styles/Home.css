@@ -1,18 +1,19 @@
 
 .home-bg {
-    height: 100% !important;
-    color: #fff;
-    padding: 0;
-    margin :0;
-    overflow-y:hidden !important;
+  height: 100% !important;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden !important;
 }
+
 .name {
   font-family: Crete Round;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
   line-height: 81px;
-  color: #F55800;
+  color: #f55800;
 }
 
 .title {
@@ -23,17 +24,18 @@
   line-height: 44px;
   color: #fff;
 }
+
 .description {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .d-size {
-  width:80%;
+  width: 80%;
 }
 
 @media screen and (max-width: 471px) {
