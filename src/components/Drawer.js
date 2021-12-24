@@ -114,7 +114,10 @@ function ResponsiveDrawer(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  const classProj = location.pathname === "/project" || location.pathname === "/about" ? classes.overAllHeight : "";
+  const classProj =
+    location.pathname === "/project" || location.pathname === "/about"
+      ? classes.overAllHeight
+      : "";
 
   const drawer = (
     <div className={classes.nav}>

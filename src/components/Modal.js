@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import PreviewIcon from '@mui/icons-material/Preview';
+import PreviewIcon from "@mui/icons-material/Preview";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import Card from "@mui/material/Card";
@@ -8,8 +8,8 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
-import github from  '../assets/Vector.png'
-import livedemo from '../assets/live.png'
+import github from "../assets/Vector.png";
+import livedemo from "../assets/live.png";
 import "../styles/Modal.css";
 import { red } from "@mui/material/colors";
 
@@ -36,14 +36,13 @@ export default function BasicModal(props) {
     title,
     description,
     langs,
-    live, 
+    live,
     source,
   } = props;
   const btn_1 = langs?.length > 0 ? langs[0] : "";
   const btn_2 = langs?.length > 1 ? langs[1] : "";
   const btn_3 = langs?.length > 2 ? langs[2] : "";
 
-  
   return (
     <Modal
       className={modal}
@@ -63,8 +62,6 @@ export default function BasicModal(props) {
             ></button>
           </div>
 
-         
-
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -73,15 +70,11 @@ export default function BasicModal(props) {
             }
             title={title}
           />
-   <div className="d-flex justify-content-center">
-
-            <div className= "d-flex mb-3 ">
-              
-                <button className="btn border mx-2" > {btn_1}</button>
-                <button className="btn border mx-2" > {btn_2}</button>
-                <button className="btn border mx-2" > {btn_3}</button>
-          
-             
+          <div className="d-flex justify-content-center">
+            <div className="d-flex mb-3 ">
+              <button className="btn border mx-2"> {btn_1}</button>
+              <button className="btn border mx-2"> {btn_2}</button>
+              <button className="btn border mx-2"> {btn_3}</button>
             </div>
           </div>
           <CardMedia
@@ -92,31 +85,26 @@ export default function BasicModal(props) {
             className={imgClass}
           />
           <CardContent>
-          
             <Typography variant="body2" color="text.secondary">
               {description}
             </Typography>
-         
-         <div>
-<div className="d-flex my-2"> 
- <div className="mx-2 sp-btn" >
-   <a href= {live} target="_blank"  rel="noreferrer">
-    <span className="me-2">
-       See Live
-    </span>
-   <img src={livedemo} alt="live" />
-      </a>
- </div>
-  <div  className="mx-2 sp-btn">
-   <a href= {source} target="_blank"  rel="noreferrer">
-     <span className="me-2">
-       See Source
-       </span>
-    <img src={github} alt="github" />
-      </a>
- </div>
-</div>
-         </div>
+
+            <div>
+              <div className="d-flex my-2">
+                <div className="mx-2 sp-btn">
+                  <a href={live} target="_blank" rel="noreferrer">
+                    <span className="me-2">See Live</span>
+                    <img src={livedemo} alt="live" />
+                  </a>
+                </div>
+                <div className="mx-2 sp-btn">
+                  <a href={source} target="_blank" rel="noreferrer">
+                    <span className="me-2">See Source</span>
+                    <img src={github} alt="github" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </Box>
