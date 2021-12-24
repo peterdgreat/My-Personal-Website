@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+.contact {
+  background-color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-form > div {
+  display: flex;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.interest {
+  margin-top: 96px;
+  min-width: 327px;
+}
+
+.contact-form ul {
+  min-width: 300px;
+}
+
+.interest > h2 {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form > ul > li {
+  margin-bottom: 39px;
+  flex: 1;
+}
+
+.form input {
+  border: none;
+  width: 100%;
+}
+
+.form textarea {
+  width: 95%;
+  height: 114px;
+  border: none;
+  background: #fbf8f7;
+  padding: 12px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.submit {
+  color: #fff;
+}

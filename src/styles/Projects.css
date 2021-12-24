@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto');
+
+.proj-family {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.works {
+  color: #fff;
+}
+
+.project {
+  background-color: #fff;
+}
+
+.css-1lizpae-MuiImageListItemBar-titleWrap {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 5px !important;
+  color: #fff;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 900px) {
+  .css-1lizpae-MuiImageListItemBar-titleWrap {
+    padding: 10px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .css-1lizpae-MuiImageListItemBar-titleWrap {
+    padding: 12px !important;
+  }
+}
