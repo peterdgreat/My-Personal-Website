@@ -73,15 +73,16 @@ function ResponsiveDrawer(props) {
     },
     {
       id: 3,
-      path: '/contact',
-      text: 'Contact',
-      icon: <ContactPageIcon />,
+        path: '/about',
+      text: 'About Me',
+      icon: <Avatar alt="Peter Ajayi" src={peter}  />
     },
     {
       id: 4,
-      path: '/about',
-      text: 'About Me',
-      icon: <Avatar alt="Peter Ajayi" src={peter}  />,
+   
+       path: '/contact',
+      text: 'Contact',
+      icon: <ContactPageIcon />,
     }
   ];
    const socialMedia = [

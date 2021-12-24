@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import PreviewIcon from '@mui/icons-material/Preview';
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import Card from "@mui/material/Card";
@@ -8,7 +8,8 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
-import ButtonGroup from "@mui/material/ButtonGroup";
+import github from  '../assets/Vector.png'
+import livedemo from '../assets/live.png'
 import "../styles/Modal.css";
 import { red } from "@mui/material/colors";
 
@@ -35,12 +36,14 @@ export default function BasicModal(props) {
     title,
     description,
     langs,
+    live, 
+    source,
   } = props;
   const btn_1 = langs?.length > 0 ? langs[0] : "";
   const btn_2 = langs?.length > 1 ? langs[1] : "";
   const btn_3 = langs?.length > 2 ? langs[2] : "";
-  const btn_4 = langs?.length > 3 ? langs[3] : "";
 
+  
   return (
     <Modal
       className={modal}
@@ -74,10 +77,10 @@ export default function BasicModal(props) {
 
             <div className= "d-flex mb-3 ">
               
-                <button className="btn border btn-p" > {btn_1}</button>
-                <button className="btn border btn-p" > {btn_2}</button>
-                <button className="btn border btn-p" > {btn_3}</button>
-                {btn_4 ? <button className="btn border btn-p" > {btn_4}</button> : null}
+                <button className="btn border mx-2" > {btn_1}</button>
+                <button className="btn border mx-2" > {btn_2}</button>
+                <button className="btn border mx-2" > {btn_3}</button>
+          
              
             </div>
           </div>
@@ -94,7 +97,26 @@ export default function BasicModal(props) {
               {description}
             </Typography>
          
-         
+         <div>
+<div className="d-flex my-2"> 
+ <div className="mx-2 sp-btn" >
+   <a href= {live} >
+    <span className="me-2">
+       See Live
+    </span>
+   <img src={livedemo} alt="live" />
+      </a>
+ </div>
+  <div  className="mx-2 sp-btn">
+   <a href= {source} >
+     <span className="me-2">
+       See Source
+       </span>
+    <img src={github} alt="github" />
+      </a>
+ </div>
+</div>
+         </div>
           </CardContent>
         </Card>
       </Box>

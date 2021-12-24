@@ -20,10 +20,14 @@ const useStyles = makeStyles({
   },
   seeProj : {
     backgroundColor: "#f55800 !important",
-    minHeight:"37px !important",
+    minHeight:"30px !important",
     cursor: "pointer",
     textAlign: "center",
+    "&:first-element-child": {
+      padding: "0px !important",
+    },
   },
+
   imgWrapper : {
     backgroundColor: "#3E3C3C !important",
   },
@@ -100,7 +104,9 @@ export default function Project() {
             title={project.btn}
             id={project.id}
             onClick={handleOpen}
+            
           />
+        
         </ImageListItem>
 <ModalC 
 img={filtered[0]?.img}
@@ -112,6 +118,8 @@ title ={filtered[0]?.title}
 description={filtered[0]?.description}
 langs = {filtered[0]?.langs}
 id = {project.id}
+live = {filtered[0]?.live}
+source = {filtered[0]?.source}
 />
      </div> ))}
     </ImageList>
