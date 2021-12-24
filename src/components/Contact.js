@@ -3,21 +3,23 @@ import { useForm, ValidationError } from "@formspree/react";
 import "../styles/Contact.css";
 export default function Contact() {
   const [state, handleSubmit] = useForm("xeqvpzae");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+  const handlesubmit = (e) => {
+    handleSubmit(e);
+    e.target.reset();
   }
-
   return (
     <div className="contact">
+   
       <section className="contact-form" id="contact-section">
         <div className="interest">
-          <h2>
+           {state.succeeded && <h2>Thanks for reaching out! I will get back to you as soon as possible</h2>}
+          {state.succeeded === false && <h2>
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
-          </h2>
+          </h2>}
         </div>
         <div>
-          <form className="form mt-3" onSubmit={handleSubmit}>
+          <form className="form " onSubmit={handlesubmit}>
             <ul>
               <li className="border-bottom">
                 <input
@@ -25,7 +27,7 @@ export default function Contact() {
                   id="name"
                   placeholder="Full name"
                   required
-                  maxlength="30"
+                  maxLength="50"
                 />
                 <ValidationError
                   prefix="Name"
@@ -52,7 +54,7 @@ export default function Contact() {
                   name="comment"
                   id="comment"
                   placeholder="Enter text here"
-                  maxlength="500"
+                  maxLength="500"
                   required
                 ></textarea>
                 <ValidationError

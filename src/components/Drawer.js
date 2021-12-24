@@ -20,6 +20,7 @@ import ContactPageIcon from "@mui/icons-material/ContactPage";
 import HomeIcon from "@mui/icons-material/Home";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@mui/material/Avatar";
 import { useLocation } from "react-router-dom";
@@ -29,6 +30,8 @@ import Project from "./Project";
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
+import medium from "../assets/medium.svg";
+import angelist from "../assets/angellist.svg";
 const drawerWidth = 240;
 const useStyles = makeStyles({
   root: {
@@ -88,13 +91,13 @@ function ResponsiveDrawer(props) {
   const socialMedia = [
     {
       id: 1,
-      url: "https://twitter.com/dev_Peter_O",
-      text: "Angelist",
-      icon: <HomeIcon />,
+      url: "https://github.com/peterdgreat",
+      text: "Github",
+      icon: < GitHubIcon />,
     },
     {
       id: 2,
-      url: "https://twitter.com/dev_Peter_O",
+      url: "https://www.linkedin.com/in/ajayipeter/",
       text: "LinkedIn",
       icon: <LinkedInIcon />,
     },
@@ -106,9 +109,9 @@ function ResponsiveDrawer(props) {
     },
     {
       id: 4,
-      url: "https://twitter.com/dev_Peter_O",
+      url: "https://medium.com/@peterdgreat",
       text: "Medium",
-      icon: <ContactPageIcon />,
+      icon: <img className="icon mt-1" alt="medium" src={medium} />,
     },
   ];
   const handleDrawerToggle = () => {

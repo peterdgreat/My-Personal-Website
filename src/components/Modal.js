@@ -91,18 +91,18 @@ export default function BasicModal(props) {
 
             <div>
               <div className="d-flex my-2">
-                <div className="mx-2 sp-btn">
-                  <a href={live} target="_blank" rel="noreferrer">
+               
+                  <a href={live} target="_blank" rel="noreferrer" className="mx-2 sp-btn">
                     <span className="me-2">See Live</span>
                     <img src={livedemo} alt="live" />
                   </a>
-                </div>
-                <div className="mx-2 sp-btn">
-                  <a href={source} target="_blank" rel="noreferrer">
+           
+                
+                  <a className="mx-2 sp-btn" href={source} target="_blank" rel="noreferrer">
                     <span className="me-2">See Source</span>
                     <img src={github} alt="github" />
                   </a>
-                </div>
+          
               </div>
             </div>
           </CardContent>

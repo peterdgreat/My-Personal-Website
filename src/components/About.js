@@ -11,7 +11,8 @@ export default function About() {
           My biggest goal in life is to use software engineering to solve
           real-world problems, I am a full-stack development student currently
           enrolled in a remote software development school that uses pair
-          programming and real-world projects to teach software development.If
+          programming and real-world projects to teach software development.
+          I am constantly improving my skills on a daily basis. If
           you'd like to get in contact about potential job opportunities, please
           reach out!
         </p>
@@ -25,7 +26,7 @@ export default function About() {
       <div className="mt-5">
         <hr />
       </div>
-      <section class="about-details">
+      <section className="about-details">
         <ul className="technologies list-unstyled d-flex flex-column flex-md-row justify-content-around">
           <li>
             <h4>
