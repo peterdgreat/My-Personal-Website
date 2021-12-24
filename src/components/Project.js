@@ -63,6 +63,9 @@ const useStyles = makeStyles({
     imgGrid : {
       gridTemplateColumns: "repeat(3, 1fr) !important",
     },
+      imgGridSm : {
+      gridTemplateColumns: "repeat(1, 1fr) !important",
+    },
 });
 export default function Project() {
         const projects = useSelector(state => state.projectsReducer.projects)
@@ -81,14 +84,16 @@ export default function Project() {
    const classes = useStyles();
  
         const matches = useMediaQuery('(min-width:900px)');
+         const matches_2= useMediaQuery('(max-width:360px)');
         const mediaImg = matches  ? classes.imgGrid: '';
+        const mediaImgSm = matches_2  ? classes.imgGridSm: '';
 
   return (
     <>
     <ListSubheader component="div" className="text-center"><h2>My Projects</h2></ListSubheader>
       <div className="d-flex justify-content-center project">
             
-    <ImageList  sx={{ width: 1200}}  className= {`${classes.spacing} ${mediaImg}`} >
+    <ImageList  sx={{ width: 1200}}  className= {`${classes.spacing} ${mediaImg} ${mediaImgSm}`} >
       {projects.map((project) => (
         <div  key={project.id}>
         <ImageListItem className= {classes.imgWrapper} >

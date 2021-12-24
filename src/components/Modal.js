@@ -100,7 +100,7 @@ export default function BasicModal(props) {
          <div>
 <div className="d-flex my-2"> 
  <div className="mx-2 sp-btn" >
-   <a href= {live} >
+   <a href= {live} target="_blank"  rel="noreferrer">
     <span className="me-2">
        See Live
     </span>
@@ -108,7 +108,7 @@ export default function BasicModal(props) {
       </a>
  </div>
   <div  className="mx-2 sp-btn">
-   <a href= {source} >
+   <a href= {source} target="_blank"  rel="noreferrer">
      <span className="me-2">
        See Source
        </span>
