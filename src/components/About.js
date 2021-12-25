@@ -49,9 +49,9 @@ export default function About() {
             </h4>
             <ul className="list-unstyled">
               <li>Bootstrap</li>
+              <li>Materia Ui</li>
               <li>Ruby on Rails</li>
               <li>RSPec</li>
-              <li>CapyBara</li>
               <li>Selenium</li>
             </ul>
           </li>
