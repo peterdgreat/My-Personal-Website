@@ -5,7 +5,7 @@ This is my personal portfolio website, this gives an information about what I am
 ![ajayipeter](./src/assets/MyPortfolio.png)
 
 ## Live demo
-[ajayipeter](https://crypto-metrics-d.netlify.app)
+[ajayipeter](https://peterajayi.tech)
 
 
 
