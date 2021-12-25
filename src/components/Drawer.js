@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/require-default-props */
 import * as React from 'react';
 import PropTypes from 'prop-types';
@@ -131,11 +132,12 @@ function ResponsiveDrawer(props) {
           <ListItem button key={link.id}>
             <NavLink
               onClick={handleDrawerToggle}
-              className={`d-flex ${classes.icon}`}
+              className={`d-flex ${classes.icon} w-100 h-100 px-3 py-1`}
               to={link.path}
+              activeClassName="active"
             >
-              <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
-              <ListItemText primary={link.text} />
+              <ListItemIcon activeClassName="active" className={classes.icon}>{link.icon}</ListItemIcon>
+              <ListItemText activeClassName="active" primary={link.text} />
             </NavLink>
           </ListItem>
         ))}
