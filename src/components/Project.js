@@ -88,7 +88,7 @@ export default function Project() {
   return (
     <>
       <ListSubheader component="div" className="text-center">
-        <h2 className="proj-family  py-3">My Projects</h2>
+        <h2 className="proj-family py-3">My Projects</h2>
       </ListSubheader>
       <div className="d-flex justify-content-center project">
         <ImageList
