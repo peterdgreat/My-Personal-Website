@@ -48,11 +48,11 @@ export default function About() {
               Frameworks
             </h4>
             <ul className="list-unstyled">
-              <li>Bootstrap</li>
+              <li>React</li>
               <li>Materia Ui</li>
-              <li>Ruby on Rails</li>
+              <li>Bootstrap</li>
               <li>RSPec</li>
-              <li>Selenium</li>
+              <li>Ruby on rails</li>
             </ul>
           </li>
           <li>
@@ -62,10 +62,10 @@ export default function About() {
               {' '}
             </h4>
             <ul className="list-unstyled">
-              <li>Codekit</li>
+              <li>Team Work</li>
+              <li>Mentoring</li>
+              <li>Pair Programming</li>
               <li>Github</li>
-              <li>Codepen</li>
-              <li>Gitlab</li>
               <li>Terminal</li>
             </ul>
           </li>

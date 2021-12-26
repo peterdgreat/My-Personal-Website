@@ -13,9 +13,10 @@ export default function Home() {
         <h3 className="title text-center mt-3">I’am a Software Developer</h3>
         <div className="description  d-flex justify-content-center  ">
           <p className=" d-size ">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
+            I can help you build a product, feature, or website.
+            Look through some of my work and experience!
+            If you like what you see and have a project you need coded,
+            don’t hesitate to contact me.
           </p>
         </div>
       </section>
