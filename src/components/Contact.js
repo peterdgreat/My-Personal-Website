@@ -19,7 +19,7 @@ export default function Contact() {
           {state.succeeded === false && (
           <h2>
             I am always interested in hearing about new projects, so if you would
-            like to chat, please get in touch.
+            like to chat please get in touch.
           </h2>
           )}
         </div>
