@@ -7,9 +7,15 @@
   width: 240px;
 }
 
-html,
-body {
-  height: 100%;
-  background-color: #1c1a19 !important;
-  color: #fff !important;
+.nav-link {
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ff6b00;
+}
+
+.nav-link.active {
+  color: #ff6b00;
 }

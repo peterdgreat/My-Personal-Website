@@ -1,3 +1,8 @@
+.about {
+  background-color: #1c1a19 !important;
+  color: #fff;
+}
+
 .technologies {
   text-align: center;
   margin-block-start: 0;
@@ -13,7 +18,6 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
-  color: #fff;
 }
 
 .technologies h4 {

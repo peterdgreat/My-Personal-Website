@@ -9,7 +9,7 @@ export default function Contact() {
     e.target.reset();
   };
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
 
       <section className="contact-form" id="contact-section">
         <div className="interest">
@@ -25,7 +25,7 @@ export default function Contact() {
         </div>
         <div>
           <form className="form " onSubmit={handlesubmit}>
-            <ul>
+            <ul className="list-unstyled">
               <li className="border-bottom">
                 <input
                   type="text"

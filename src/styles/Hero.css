@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   overflow-y: hidden !important;
+  background-color: #1c1a19 !important;
 }
 
 .name {
@@ -44,24 +45,34 @@
     margin-top: 10px;
   }
 }
- h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+
+.avatar {
+  /* padding-top: 25%;
+  padding-bottom: 25%; */
+  border-radius: 50%;
+  margin: 28px;
+  width: 300px;
+  height: 350px;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@media screen and (max-width: 875px) {
+  .avatar {
+    width: 200px;
+    height: 250px;
+  }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: transparent; }
+@media screen and (max-width: 754px) {
+  .avatar {
+    display: none;
+  }
+
+  .home-bg {
+    flex-direction: column-reverse;
+    padding-left: 5%;
+  }
+
+  .social {
+    display: flex;
+  }
 }

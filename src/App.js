@@ -1,9 +1,9 @@
 import { React, useEffect } from 'react';
 
 import { useDispatch } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { getProjects } from './redux/projects/projects';
-import Drawer from './components/Drawer';
+import Navbar from './components/Navbar';
+import LandingPage from './pages/LandingPage';
 
 import './App.css';
 
@@ -15,10 +15,9 @@ function App() {
 
   return (
     <div>
-      <Router>
-        <Drawer />
+      <Navbar />
+      <LandingPage />
 
-      </Router>
     </div>
   );
 }

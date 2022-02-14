@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
 import ModalC from './Modal';
@@ -87,9 +86,8 @@ export default function Project() {
 
   return (
     <>
-      <ListSubheader component="div" className="text-center">
-        <h2 className="proj-family py-3">My Projects</h2>
-      </ListSubheader>
+      <h2 id=" project" className=" py-3">My Projects</h2>
+
       <div className="d-flex justify-content-center project">
         <ImageList
           sx={{ width: 1200 }}

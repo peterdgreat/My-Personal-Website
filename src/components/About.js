@@ -4,7 +4,7 @@ import '../styles/About.css';
 
 export default function About() {
   return (
-    <div className="container mt-5 ">
+    <div className=" about mt-5" id="about">
       <header className="d-flex flex-column justify-content-center align-items-center">
         <h2 className="name mt-5 proj-family">About me</h2>
         <p className="d-size">
