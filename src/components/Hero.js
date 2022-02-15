@@ -6,7 +6,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { makeStyles } from '@material-ui/core/styles';
-import peter from '../assets/slack.jpg';
 import medium from '../assets/medium.svg';
 
 const useStyles = makeStyles({
@@ -45,35 +44,35 @@ export default function Hero() {
     },
   ];
   return (
-    <div className="home-bg py-5 w-100 h-100 d-flex align-items-center">
-      <section className="social">
-        {socialMedia.map((link) => (
-          <ListItem button key={link.id}>
-            <a href={link.url} className="d-flex nav-link ">
-              <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
-            </a>
-          </ListItem>
-        ))}
-      </section>
-      <section className="d-flex flex-column align-items-start">
-        <h1 className="name text-center mt-5">
-          Hey There.
-          <br />
-          I’m Peter
-        </h1>
-        <h3 className="title text-center mt-3">I’am a Software Developer</h3>
-        <div className="description  d-flex">
-          <p className=" d-size ">
-            I can help you build a product, feature, or website.
-            Look through some of my work and experience!
-            If you like what you see and have a project you need coded,
-            don’t hesitate to contact me.
-          </p>
-        </div>
-      </section>
-      <section>
-        <img alt="Peter Ajayi" src={peter} className="avatar" />
-      </section>
+    <div className="home-bg w-100">
+      <div className="d-flex align-items-center container home ">
+
+        <section className="d-flex flex-md-column">
+          {socialMedia.map((link) => (
+            <ListItem button key={link.id}>
+              <a href={link.url}>
+                <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
+              </a>
+            </ListItem>
+          ))}
+        </section>
+        <section className="d-flex flex-column justify-content-center w-100">
+          <h2 className="name text-center mt-5">
+            Hey There.
+            <br />
+            I’m Peter
+          </h2>
+          <h3 className="title text-center mt-3">I’am a Software Developer</h3>
+          <div className="description  d-flex">
+            <p>
+              I can help you build a product, feature, or website.
+              Look through some of my work and experience!
+              If you like what you see and have a project you need coded,
+              don’t hesitate to contact me.
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

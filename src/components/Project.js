@@ -86,7 +86,7 @@ export default function Project() {
 
   return (
     <>
-      <h2 id=" project" className=" py-3">My Projects</h2>
+      <h1 id=" project" className=" py-3">My Projects</h1>
 
       <div className="d-flex justify-content-center project">
         <ImageList

@@ -33,17 +33,6 @@ const useStyles = makeStyles({
   },
 });
 
-// const useStyles = makeStyles(() => ({
-//   link: {
-//     textDecoration: 'none',
-//     color: 'blue',
-//     fontSize: '20px',
-//   },
-//   icon: {
-//     color: 'white',
-//   },
-// }));
-
 function DrawerComponent() {
   const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);

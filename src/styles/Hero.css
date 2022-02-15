@@ -3,76 +3,46 @@
 .home-bg {
   height: 100% !important;
   color: #fff;
-  padding: 0;
+  padding: 0  0;
   margin: 0;
   overflow-y: hidden !important;
   background-color: #1c1a19 !important;
 }
 
 .name {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
-  line-height: 81px;
   color: #f55800;
 }
 
 .title {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
   color: #fff;
 }
 
 .description {
-  font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
   color: #f4f5f7;
 }
 
-.d-size {
-  width: 80%;
+.home {
+  padding: 120px 15px 120px 15px;
 }
 
-@media screen and (max-width: 471px) {
-  .d-size {
-    margin-top: 10px;
-  }
-}
-
-.avatar {
-  /* padding-top: 25%;
-  padding-bottom: 25%; */
-  border-radius: 50%;
-  margin: 28px;
-  width: 300px;
-  height: 350px;
-}
-
-@media screen and (max-width: 875px) {
-  .avatar {
-    width: 200px;
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 754px) {
-  .avatar {
-    display: none;
-  }
-
-  .home-bg {
+@media screen and (max-width: 768px) {
+  .home {
     flex-direction: column-reverse;
-    padding-left: 5%;
   }
 
   .social {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+    padding: 192px 15px 192px 15px;
   }
 }
