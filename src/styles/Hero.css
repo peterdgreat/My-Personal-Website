@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto');
 
 .home-bg {
-  height: 100% !important;
+  height: 590px;
   color: #fff;
   padding: 0  0;
   margin: 0;
-  overflow-y: hidden !important;
-  background-color: #1c1a19 !important;
+  background-color: #1c1a19;
+  background-image: url("../assets/background-m.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .name {
@@ -44,5 +46,10 @@
 @media screen and (min-width: 992px) {
   .home {
     padding: 192px 15px 192px 15px;
+  }
+
+  .home-bg {
+    background-image: url("../assets/background-d.png");
+    height: 870px;
   }
 }
