@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto');
 
 .home-bg {
-  height: 590px;
   color: #fff;
   padding: 0  0;
   margin: 0;
@@ -12,9 +11,15 @@
 }
 
 .name {
+  /* font-family: 'Crete Round'; */
   font-style: normal;
-  font-weight: normal;
-  color: #f55800;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+}
+
+.section {
+  max-width: 566px;
 }
 
 .title {
@@ -30,7 +35,7 @@
 }
 
 .home {
-  padding: 120px 15px 120px 15px;
+  padding: 120px 21px 130px 21px;
 }
 
 @media screen and (max-width: 768px) {
@@ -45,11 +50,10 @@
 
 @media screen and (min-width: 992px) {
   .home {
-    padding: 192px 15px 192px 15px;
+    padding: 192px 0 251px 0;
   }
 
   .home-bg {
     background-image: url("../assets/background-d.png");
-    height: 870px;
   }
 }

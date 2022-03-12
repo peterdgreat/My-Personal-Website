@@ -44,8 +44,8 @@ export default function Hero() {
     },
   ];
   return (
-    <div className="home-bg w-100">
-      <div className="d-flex align-items-center container home ">
+    <div className="home-bg w-100 ">
+      <div className=" w-100 h-100 d-flex align-items-start justify-content-end home  border border-primary ">
 
         <section className="d-flex flex-md-column">
           {socialMedia.map((link) => (
@@ -56,20 +56,22 @@ export default function Hero() {
             </ListItem>
           ))}
         </section>
-        <section className="d-flex flex-column justify-content-center w-100">
-          <h2 className="name text-center mt-5">
-            Hey There.
-            <br />
-            I’m Peter
-          </h2>
-          <h3 className="title text-center mt-3">I’am a Software Developer</h3>
-          <div className="description  d-flex">
-            <p>
-              I can help you build a product, feature, or website.
-              Look through some of my work and experience!
-              If you like what you see and have a project you need coded,
-              don’t hesitate to contact me.
-            </p>
+        <section className="d-flex flex-column w-100 ">
+          <div className="section">
+            <h2 className="name text-center  ">
+              Hey There.
+              <br />
+              I’m Peter
+            </h2>
+            <h3 className="title text-center ">I’am a Software Developer</h3>
+            <div className="description  d-flex">
+              <p>
+                I can help you build a product, feature, or website.
+                Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hesitate to contact me.
+              </p>
+            </div>
           </div>
         </section>
       </div>
