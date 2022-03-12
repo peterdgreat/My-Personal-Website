@@ -45,7 +45,7 @@ export default function Hero() {
   ];
   return (
     <div className="home-bg w-100 ">
-      <div className=" w-100 h-100 d-flex align-items-start justify-content-end home  border border-primary ">
+      <div className=" w-100 h-100 d-flex align-items-start justify-content-end home ">
 
         <section className="d-flex flex-md-column">
           {socialMedia.map((link) => (
@@ -58,12 +58,12 @@ export default function Hero() {
         </section>
         <section className="d-flex flex-column w-100 ">
           <div className="section">
-            <h2 className="name text-center  ">
+            <h2 className="name  ">
               Hey There.
               <br />
               I’m Peter
             </h2>
-            <h3 className="title text-center ">I’am a Software Developer</h3>
+            <h3 className="title  ">I’am a Software Developer</h3>
             <div className="description  d-flex">
               <p>
                 I can help you build a product, feature, or website.

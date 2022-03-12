@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto');
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css2?family=Crete Round&family=Roboto');
 
 .home-bg {
   color: #fff;
@@ -11,11 +12,12 @@
 }
 
 .name {
-  /* font-family: 'Crete Round'; */
+  font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 82px;
+  font-size: 56px;
+  line-height: 64px;
+  color: #f55800;
 }
 
 .section {
@@ -23,15 +25,21 @@
 }
 
 .title {
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
 }
 
 .description {
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: normal;
-  color: #f4f5f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
 }
 
 .home {
@@ -45,6 +53,35 @@
 
   .social {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff5e1;
+  }
+
+  .description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
   }
 }
 
