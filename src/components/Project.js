@@ -11,7 +11,7 @@ import ModalC from './Modal';
 const useStyles = makeStyles({
   spacing: {
     margin: '14px !important',
-    gap: '14px',
+    gap: '24px !important',
   },
   seeProj: {
     backgroundColor: '#f55800 !important',
@@ -85,8 +85,13 @@ export default function Project() {
   const mediaImgSm = matchesTwo ? classes.imgGridSm : '';
 
   return (
-    <>
-      <h1 id=" project" className=" py-3">My Projects</h1>
+    <section className="m-container p-container">
+      <header className="title-header">
+
+        <h2 className="work-h">My Recent Works  </h2>
+
+        {/* <div><hr className="title-border" /></div> */}
+      </header>
 
       <div className="d-flex justify-content-center project">
         <ImageList
@@ -127,6 +132,6 @@ export default function Project() {
           ))}
         </ImageList>
       </div>
-    </>
+    </section>
   );
 }

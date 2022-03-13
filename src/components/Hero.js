@@ -12,6 +12,7 @@ const useStyles = makeStyles({
   icon: {
     color: '#fff !important',
     textDecoration: 'none',
+    minWidth: '0 !important',
   },
 });
 
@@ -47,7 +48,7 @@ export default function Hero() {
     <div className="home-bg w-100 ">
       <div className=" w-100 h-100 d-flex align-items-start justify-content-end home ">
 
-        <section className="d-flex flex-md-column">
+        <section className="d-flex flex-md-column s-container">
           {socialMedia.map((link) => (
             <ListItem button key={link.id}>
               <a href={link.url}>
@@ -56,8 +57,8 @@ export default function Hero() {
             </ListItem>
           ))}
         </section>
-        <section className="d-flex flex-column w-100 ">
-          <div className="section">
+        <section className="d-flex flex-column w-100  border border-primary">
+          <div className="section m-container border border-primary">
             <h2 className="name  ">
               Hey There.
               <br />

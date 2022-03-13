@@ -43,7 +43,7 @@
 }
 
 .home {
-  padding: 120px 21px 130px 21px;
+  padding: 120px 0 130px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -53,6 +53,11 @@
 
   .social {
     display: flex;
+  }
+
+  .s-container {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 

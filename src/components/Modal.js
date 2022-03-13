@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { red } from '@mui/material/colors';
@@ -8,7 +9,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import github from '../assets/Vector.png';
 import livedemo from '../assets/live.png';
 import '../styles/Modal.css';
@@ -119,16 +120,16 @@ export default function BasicModal(props) {
     </Modal>
   );
 }
-BasicModal.propTypes = {
-  open: PropTypes.bool.isRequired,
-  handleClose: PropTypes.func.isRequired,
-  modal: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  imgClass: PropTypes.string.isRequired,
-  firstLetter: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  langs: PropTypes.arrayOf(PropTypes.string).isRequired,
-  live: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
-};
+// BasicModal.propTypes = {
+//   open: PropTypes.bool.isRequired,
+//   handleClose: PropTypes.func.isRequired,
+//   modal: PropTypes.string.isRequired,
+//   // img: PropTypes.string.isRequired,
+//   imgClass: PropTypes.string.isRequired,
+//   // firstLetter: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   // langs: PropTypes.arrayOf(PropTypes.string).isRequired,
+//   live: PropTypes.string.isRequired,
+//   source: PropTypes.string.isRequired,
+// };

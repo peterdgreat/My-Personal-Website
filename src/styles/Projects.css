@@ -22,6 +22,27 @@
   overflow: hidden;
 }
 
+.title-header {
+  display: flex;
+  justify-content: center;
+}
+
+.title-border {
+  border: 1px solid #212121;
+  min-width: 327px;
+}
+
+.work-h {
+  height: 83px;
+  font-family: Crete RoundArial, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  padding-bottom: 24px;
+  color: #091e42;
+}
+
 @media screen and (min-width: 900px) {
   .css-1lizpae-MuiImageListItemBar-titleWrap {
     padding: 10px !important;
