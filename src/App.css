@@ -1,3 +1,11 @@
+* {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff !important;
+}
+
 .css-10h3uxi {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -7,9 +15,11 @@
   width: 240px;
 }
 
-html,
-body {
-  height: 100%;
-  background-color: #1c1a19 !important;
-  color: #fff !important;
+.nav-link {
+  cursor: pointer;
+}
+
+.m-container {
+  margin-left: 5%;
+  margin-right: 5%;
 }

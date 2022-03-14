@@ -1,14 +1,13 @@
+/* eslint-disable react/prop-types */
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { red } from '@mui/material/colors';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
-import PropTypes from 'prop-types';
 import github from '../assets/Vector.png';
 import livedemo from '../assets/live.png';
 import '../styles/Modal.css';
@@ -42,6 +41,7 @@ export default function BasicModal(props) {
   const btnOne = langs?.length > 0 ? langs[0] : '';
   const btnTwo = langs?.length > 1 ? langs[1] : '';
   const btnThree = langs?.length > 2 ? langs[2] : '';
+  const btnFour = langs?.length > 3 ? langs[3] : '';
 
   return (
     <Modal
@@ -80,10 +80,16 @@ export default function BasicModal(props) {
                 {' '}
                 {btnTwo}
               </button>
-              <button type="button" className="btn border mx-2">
+              <button type="button" className="btn main-p-description border mx-2">
                 {' '}
                 {btnThree}
               </button>
+              {langs?.length > 3 && (
+              <button type="button" className="btn border mx-2">
+                {' '}
+                {btnFour}
+              </button>
+              )}
             </div>
           </div>
           <CardMedia
@@ -94,9 +100,9 @@ export default function BasicModal(props) {
             className={imgClass}
           />
           <CardContent>
-            <Typography variant="body2" color="text.secondary">
+            <p className="main-p-description">
               {description}
-            </Typography>
+            </p>
 
             <div>
               <div className="d-flex my-2">
@@ -119,16 +125,3 @@ export default function BasicModal(props) {
     </Modal>
   );
 }
-BasicModal.propTypes = {
-  open: PropTypes.bool.isRequired,
-  handleClose: PropTypes.func.isRequired,
-  modal: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  imgClass: PropTypes.string.isRequired,
-  firstLetter: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  langs: PropTypes.arrayOf(PropTypes.string).isRequired,
-  live: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
-};
