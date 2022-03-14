@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import * as Scroll from 'react-scroll';
 
 const Links = Scroll.Link;
 
-export default function NavLinks() {
+export default function NavLinks({ closeDrawer }) {
   const links = [
     {
       id: 1,
@@ -34,6 +35,7 @@ export default function NavLinks() {
           smooth
           duration={500}
           className="nav-link"
+          onClick={closeDrawer}
         >
           {link.text}
         </Links>

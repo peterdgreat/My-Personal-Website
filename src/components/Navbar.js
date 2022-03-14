@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color: 'white',
     fontSize: '20px',
+    fontFamily: 'Roboto',
     '&:hover': {
       color: 'yellow',
       borderBottom: '1px solid white',

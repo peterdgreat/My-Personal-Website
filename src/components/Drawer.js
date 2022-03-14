@@ -23,13 +23,14 @@ const useStyles = makeStyles({
     backgroundColor: '#3E3C3C !important',
     color: '#fff !important',
     height: '100%',
+    fontFamily: 'Roboto',
   },
   icon: {
     color: '#fff !important',
     textDecoration: 'none',
   },
   DrawerWidth: {
-    width: '200px',
+    width: '300px',
   },
 });
 
@@ -45,7 +46,7 @@ function DrawerComponent() {
         <List className={`${classes.DrawerWidth} ${classes.nav}`}>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <NavLinks onClick={() => setOpenDrawer(false)} />
+              <NavLinks closeDrawer={() => setOpenDrawer(false)} />
             </ListItemText>
           </ListItem>
         </List>
