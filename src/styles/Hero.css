@@ -1,0 +1,111 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css2?family=Crete Round&family=Roboto');
+
+.home-bg {
+  color: #fff;
+  padding: 0  0;
+  margin: 0;
+  background-color: #1c1a19;
+  background-image: url("../assets/background-m.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.name {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  color: #f55800;
+}
+
+.section {
+  max-width: 566px;
+}
+
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+.description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.home {
+  padding: 120px 0 130px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  .s-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff5e1;
+  }
+
+  .description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+    padding: 192px 0 251px 0;
+  }
+
+  .home-bg {
+    background-image: url("../assets/background-d.png");
+  }
+
+  .section {
+    padding-right: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-right: 0;
+  }
+}

@@ -1,38 +1,81 @@
-/* eslint-disable react/button-has-type */
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import React from 'react';
+import * as Scroll from 'react-scroll';
+import {
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  Typography,
+  makeStyles,
+  useTheme,
+  useMediaQuery,
+} from '@material-ui/core';
+import DrawerComponent from './Drawer';
+import NavLinks from './NavLinks';
 
-export default function NavBar() {
+const useStyles = makeStyles((theme) => ({
+  navlinks: {
+    display: 'flex',
+  },
+  drawer: {
+    backgroundColor: '#3E3C3C !important',
+    color: '#fff !important',
+  },
+  logo: {
+    flexGrow: '1',
+    cursor: 'pointer',
+    color: '#fff !important',
+  },
+  link: {
+    textDecoration: 'none',
+    color: '#fff5e1 !important',
+    fontFamily: 'Inter !important',
+    cursor: 'pointer',
+    marginLeft: theme.spacing(5),
+    '&:hover': {
+      color: '#ff6b00 !important',
+    },
+    '&.active': {
+      color: '#ff6b00 !important',
+    },
+  },
+  mobileDrawer: {
+    width: '500px',
+  },
+}));
 
-  const links = [
-    {
-      id: 1,
-      path: '/',
-      text: 'Home',
-    },
-    {
-      id: 2,
-      path: '/about',
-      text: 'About',
-    },
-  ];
+function Navbar() {
+  const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
+  const scroll = Scroll.animateScroll;
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
-   <nav className="navbar navbar-expand-sm  bg">
-        <div className="container">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <GiHamburgerMenu />
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav col-12  justify-content-end align-items-center">
-        {links.map((link) => (
-          <li key={link.id} className="nav-item bdr d-flex align-items-center px-3">
-            <NavLink className="nav-Link pt-1"activeClassName="active-link"  to={link.path}>{link.text}</NavLink>
-          </li>
-        ))}
-      </ul>
-      </div>
-      </div>
-    </nav>
+    <AppBar position="fixed" className={classes.drawer}>
+      <CssBaseline />
+      <Toolbar>
+        <Typography
+          onClick={scrollToTop}
+          variant="h4"
+          className={classes.logo}
+        >
+          Peter Ajayi
+          {' '}
+
+        </Typography>
+        {isMobile ? (
+          <DrawerComponent scrollToTop={scrollToTop} />
+
+        ) : (
+
+          <div className={classes.navlinks}>
+            <NavLinks navLinks={classes.link} />
+          </div>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 }
+export default Navbar;

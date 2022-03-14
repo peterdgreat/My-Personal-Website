@@ -1,0 +1,92 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Crete Round');
+
+.proj-family {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.works {
+  color: #fff;
+}
+
+.project {
+  background-color: #fff;
+}
+
+.css-1lizpae-MuiImageListItemBar-titleWrap {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 5px !important;
+  color: #fff;
+  overflow: hidden;
+}
+
+.title-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-p-title {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.title-border {
+  border: 1px solid #212121;
+  min-width: 327px;
+}
+
+.img-wrapper {
+  max-width: 684px;
+  max-height: 448px;
+}
+
+.main-p-description {
+  max-width: 448px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.work-h {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  padding-bottom: 24px;
+  color: #091e42;
+}
+
+@media screen and (min-width: 900px) {
+  .css-1lizpae-MuiImageListItemBar-titleWrap {
+    padding: 10px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .css-1lizpae-MuiImageListItemBar-titleWrap {
+    padding: 12px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-p-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

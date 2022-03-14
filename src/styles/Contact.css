@@ -1,0 +1,61 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+.contact {
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+
+.contact-form > div {
+  display: flex;
+}
+
+.interest {
+  margin-top: 96px;
+  max-width: 455px;
+}
+
+.contact-form ul {
+  width: 100%;
+}
+
+.interest > h2 {
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form > ul > li {
+  margin-bottom: 39px;
+  flex: 1;
+}
+
+.form input {
+  border: none;
+  width: 100%;
+}
+
+.form textarea {
+  width: 95%;
+  height: 114px;
+  border: none;
+  background: #fbf8f7;
+  padding: 12px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.submit {
+  color: #fff;
+}
+
+.form {
+  margin-top: 73px;
+}

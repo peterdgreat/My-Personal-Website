@@ -1,0 +1,16 @@
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.icon {
+  width: 21px;
+  height: 17px;
+}
+
+.active {
+  border: 1px solid #1c1a19;
+  width: 100%;
+  background-color: #ff6b00;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
