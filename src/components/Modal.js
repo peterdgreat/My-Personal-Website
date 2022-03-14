@@ -2,7 +2,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { red } from '@mui/material/colors';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -82,7 +81,7 @@ export default function BasicModal(props) {
                 {' '}
                 {btnTwo}
               </button>
-              <button type="button" className="btn border mx-2">
+              <button type="button" className="btn main-p-description border mx-2">
                 {' '}
                 {btnThree}
               </button>
@@ -102,9 +101,9 @@ export default function BasicModal(props) {
             className={imgClass}
           />
           <CardContent>
-            <Typography variant="body2" color="text.secondary">
+            <p className="main-p-description">
               {description}
-            </Typography>
+            </p>
 
             <div>
               <div className="d-flex my-2">
