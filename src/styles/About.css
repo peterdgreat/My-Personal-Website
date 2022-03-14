@@ -1,3 +1,6 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
 .about {
   background-color: #1c1a19 !important;
   color: #fff;
@@ -27,7 +30,7 @@
 
 .technologies li > ul > li {
   margin-bottom: 32px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -35,7 +38,7 @@
 }
 
 .technologies h4 {
-  font-family: InaiMathi, Arial, Helvetica, sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
