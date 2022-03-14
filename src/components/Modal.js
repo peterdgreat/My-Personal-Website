@@ -43,6 +43,7 @@ export default function BasicModal(props) {
   const btnOne = langs?.length > 0 ? langs[0] : '';
   const btnTwo = langs?.length > 1 ? langs[1] : '';
   const btnThree = langs?.length > 2 ? langs[2] : '';
+  const btnFour = langs?.length > 3 ? langs[3] : '';
 
   return (
     <Modal
@@ -85,6 +86,12 @@ export default function BasicModal(props) {
                 {' '}
                 {btnThree}
               </button>
+              {langs?.length > 3 && (
+              <button type="button" className="btn border mx-2">
+                {' '}
+                {btnFour}
+              </button>
+              )}
             </div>
           </div>
           <CardMedia
@@ -120,16 +127,3 @@ export default function BasicModal(props) {
     </Modal>
   );
 }
-// BasicModal.propTypes = {
-//   open: PropTypes.bool.isRequired,
-//   handleClose: PropTypes.func.isRequired,
-//   modal: PropTypes.string.isRequired,
-//   // img: PropTypes.string.isRequired,
-//   imgClass: PropTypes.string.isRequired,
-//   // firstLetter: PropTypes.string.isRequired,
-//   title: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-//   // langs: PropTypes.arrayOf(PropTypes.string).isRequired,
-//   live: PropTypes.string.isRequired,
-//   source: PropTypes.string.isRequired,
-// };

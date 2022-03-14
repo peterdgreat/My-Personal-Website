@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import '../styles/Projects.css';
 import { useSelector } from 'react-redux';
@@ -66,6 +68,7 @@ const useStyles = makeStyles({
 });
 export default function Project() {
   const projects = useSelector((state) => state.projectsReducer.projects);
+  const mainProject = useSelector((state) => state.projectsReducer.mainProject);
   const [open, setOpen] = React.useState(false);
   const initialState = [];
   const [filtered, setFiltered] = React.useState(initialState);
@@ -85,14 +88,40 @@ export default function Project() {
   const mediaImgSm = matchesTwo ? classes.imgGridSm : '';
 
   return (
-    <section className="m-container p-container">
+    <section className="m-container">
       <header className="title-header">
 
         <h2 className="work-h">My Recent Works  </h2>
-
-        {/* <div><hr className="title-border" /></div> */}
       </header>
+      <section className="d-flex flex-column flex-md-row mb-3 justify-content-center">
+        <div className="img-wrapper px-2">
 
+          <img
+            src={mainProject.img}
+            alt={mainProject.title}
+            loading="lazy"
+            className="img-fluid"
+          />
+        </div>
+
+        <div className="px-2 pt-3 pt-md-0">
+          <section>
+            <h2 className="main-p-title">
+              {mainProject?.title}
+            </h2>
+            <p className="main-p-description">
+              {mainProject?.description}
+            </p>
+            <div
+              className="sp-btn"
+              id={mainProject.id}
+              onClick={handleOpen}
+            >
+              {mainProject.btn}
+            </div>
+          </section>
+        </div>
+      </section>
       <div className="d-flex justify-content-center project">
         <ImageList
           sx={{ width: 1200 }}
@@ -115,18 +144,18 @@ export default function Project() {
                 />
               </ImageListItem>
               <ModalC
-                img={filtered[0]?.img}
+                img={filtered[0]?.img || mainProject?.img}
                 open={open}
                 handleClose={handleClose}
                 modal={classes.modal}
                 imgClass={classes.imgClass}
-                firstLetter={filtered[0]?.title[0]}
-                title={filtered[0]?.title}
-                description={filtered[0]?.description}
-                langs={filtered[0]?.langs}
+                firstLetter={filtered[0]?.title[0] || mainProject?.title[0]}
+                title={filtered[0]?.title || mainProject?.title}
+                description={filtered[0]?.description || mainProject?.description}
+                langs={filtered[0]?.langs || mainProject?.langs}
                 id={project.id}
-                live={filtered[0]?.live}
-                source={filtered[0]?.source}
+                live={filtered[0]?.live || mainProject?.live}
+                source={filtered[0]?.source || mainProject?.source}
               />
             </div>
           ))}

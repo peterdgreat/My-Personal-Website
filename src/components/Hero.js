@@ -57,8 +57,8 @@ export default function Hero() {
             </ListItem>
           ))}
         </section>
-        <section className="d-flex flex-column w-100  border border-primary">
-          <div className="section m-container border border-primary">
+        <section className="d-flex flex-column w-100 ">
+          <div className="section m-container">
             <h2 className="name  ">
               Hey There.
               <br />

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto');
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Crete Round');
 
 .proj-family {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -25,6 +26,17 @@
 .title-header {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-p-title {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
 }
 
 .title-border {
@@ -32,9 +44,23 @@
   min-width: 327px;
 }
 
+.img-wrapper {
+  max-width: 684px;
+  max-height: 448px;
+}
+
+.main-p-description {
+  max-width: 448px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
 .work-h {
-  height: 83px;
-  font-family: Crete RoundArial, Arial, Helvetica, sans-serif;
+  font-family: "Crete Round";
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -52,5 +78,15 @@
 @media screen and (min-width: 1200px) {
   .css-1lizpae-MuiImageListItemBar-titleWrap {
     padding: 12px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-p-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
