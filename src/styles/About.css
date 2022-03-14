@@ -1,6 +1,15 @@
 .about {
   background-color: #1c1a19 !important;
   color: #fff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-bg {
+  background-image: url("../assets/about-m.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 150px;
 }
 
 .technologies {
@@ -10,9 +19,12 @@
   padding-inline-start: 0;
 }
 
+.abt-size {
+  max-width: 566px;
+}
+
 .technologies li > ul > li {
   margin-bottom: 32px;
-  height: 24px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -57,4 +69,21 @@
   background: #ff6b00;
   border-radius: 150px;
   margin-right: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .about-bg {
+    background-image: url("../assets/about-d.svg");
+    padding-bottom: 160px;
+  }
+
+  .abt-size {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .abt-size {
+    padding-right: 0;
+  }
 }

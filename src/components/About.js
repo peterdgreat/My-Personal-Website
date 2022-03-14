@@ -4,27 +4,29 @@ import '../styles/About.css';
 
 export default function About() {
   return (
-    <div className=" about mt-5" id="about">
-      <header className="d-flex flex-column justify-content-center align-items-center">
-        <h2 className="name mt-5 proj-family">About me</h2>
-        <p className="d-size">
-          {' '}
-          My biggest goal in life is to use software engineering to solve
-          real-world problems, I am a full-stack development student currently
-          enrolled in a remote software development school that uses pair
-          programming and real-world projects to teach software development.
-          I am constantly improving my skills on a daily basis. If
-          you would like to get in contact about potential job opportunities, please
-          reach out!
-        </p>
+    <div className="about" id="about">
+      <header className="d-flex flex-column justify-content-start about-bg align-items-start">
+        <section className="m-container">
+          <h2 className="name">About me</h2>
+          <p className="abt-size description">
+            {' '}
+            My biggest goal in life is to use software engineering to solve
+            real-world problems, I am a full-stack development student currently
+            enrolled in a remote software development school that uses pair
+            programming and real-world projects to teach software development.
+            I am constantly improving my skills on a daily basis. If
+            you would like to get in contact about potential job opportunities, please
+            reach out!
+          </p>
+          <div className="sp-btn">
+            <a href={Resume} download>
+              Get My Resume
+            </a>
+          </div>
+        </section>
 
-        <div className="sp-btn">
-          <a href={Resume} download>
-            Get My Resume
-          </a>
-        </div>
       </header>
-      <div className="mt-5">
+      <div className="">
         <hr />
       </div>
       <section className="about-details">

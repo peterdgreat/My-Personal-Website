@@ -98,4 +98,14 @@
   .home-bg {
     background-image: url("../assets/background-d.png");
   }
+
+  .section {
+    padding-right: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-right: 0;
+  }
 }
