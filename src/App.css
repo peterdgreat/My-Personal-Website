@@ -2,6 +2,10 @@
   overflow-x: hidden;
 }
 
+body {
+  background-color: #fff !important;
+}
+
 .css-10h3uxi {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -13,22 +17,9 @@
 
 .nav-link {
   cursor: pointer;
-  color: #fff;
-}
-
-.nav-link:hover {
-  color: #ff6b00;
-}
-
-.nav-link.active {
-  color: #ff6b00;
 }
 
 .m-container {
   margin-left: 5%;
   margin-right: 5%;
-}
-
-.p-container {
-  padding-left: 54.45px;
 }

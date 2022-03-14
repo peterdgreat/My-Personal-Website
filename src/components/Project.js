@@ -88,7 +88,7 @@ export default function Project() {
   const mediaImgSm = matchesTwo ? classes.imgGridSm : '';
 
   return (
-    <section className="m-container">
+    <section className="m-container" id="project">
       <header className="title-header">
 
         <h2 className="work-h">My Recent Works  </h2>

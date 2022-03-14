@@ -8,7 +8,6 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
-// import PropTypes from 'prop-types';
 import github from '../assets/Vector.png';
 import livedemo from '../assets/live.png';
 import '../styles/Modal.css';

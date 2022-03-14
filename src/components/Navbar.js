@@ -14,7 +14,6 @@ import NavLinks from './NavLinks';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginLeft: theme.spacing(5),
     display: 'flex',
   },
   drawer: {
@@ -24,15 +23,19 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: '1',
     cursor: 'pointer',
+    color: '#fff !important',
   },
   link: {
     textDecoration: 'none',
-    color: 'white',
-    fontSize: '20px',
-    fontFamily: 'Roboto',
+    color: '#fff5e1 !important',
+    fontFamily: 'Inter !important',
+    cursor: 'pointer',
+    marginLeft: theme.spacing(5),
     '&:hover': {
-      color: 'yellow',
-      borderBottom: '1px solid white',
+      color: '#ff6b00 !important',
+    },
+    '&.active': {
+      color: '#ff6b00 !important',
     },
   },
   mobileDrawer: {
@@ -59,14 +62,16 @@ function Navbar() {
           className={classes.logo}
         >
           Peter Ajayi
+          {' '}
 
         </Typography>
         {isMobile ? (
-          <DrawerComponent />
-        ) : (
-          <div className={classes.navlinks}>
+          <DrawerComponent scrollToTop={scrollToTop} />
 
-            <NavLinks />
+        ) : (
+
+          <div className={classes.navlinks}>
+            <NavLinks navLinks={classes.link} />
           </div>
         )}
       </Toolbar>
