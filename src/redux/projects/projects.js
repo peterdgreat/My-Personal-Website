@@ -49,7 +49,7 @@ const initialState = {
       id: '4',
       title: 'A Todo List',
       description:
-        'This is Todo List app that alowws users to organoze their day. It allows users to: Add a task. Remove a selected task. Mark a task as complete.',
+        'This is Todo List app that alows users to organoze their day. It allows users to: Add a task. Remove a selected task. Mark a task as complete.',
       langs: ['Html', 'Css', 'JavaScript', 'Bootstrap'],
       btn: 'see project',
       img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933642/todo_a7uxnb.jpg',
