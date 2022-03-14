@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="about" id="about">
       <header className="d-flex flex-column justify-content-start about-bg align-items-start">
-        <section className="m-container">
+        <section className="m-container p-container">
           <h2 className="name">About me</h2>
           <p className="abt-size description">
             {' '}
@@ -33,7 +33,7 @@ export default function About() {
         <hr />
       </div>
       <section className="about-details">
-        <ul className="technologies list-unstyled d-flex flex-column flex-md-row justify-content-around">
+        <ul className="technologies m-container p-container list-unstyled d-flex flex-column flex-md-row justify-content-between">
           <li>
             <h4>
               <span className="kite" />

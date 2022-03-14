@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
 
-      <section className="contact-form" id="contact-section">
+      <section className=" p-container m-container contact-form d-flex flex-column flex-lg-row" id="contact-section">
         <div className="interest">
           {state.succeeded && (
           <h2>Thanks for reaching out! I will get back to you as soon as possible</h2>
@@ -23,8 +23,8 @@ export default function Contact() {
           </h2>
           )}
         </div>
-        <div>
-          <form className="form " onSubmit={handlesubmit}>
+        <div className="w-100 ">
+          <form className="form w-100" onSubmit={handlesubmit}>
             <ul className="list-unstyled">
               <li className="border-bottom">
                 <input
