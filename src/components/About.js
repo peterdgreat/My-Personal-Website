@@ -11,10 +11,13 @@ export default function About() {
           <p className="abt-size description">
             {' '}
             My biggest goal in life is to use software engineering to solve
-            real-world problems, I am a full-stack development student currently
-            enrolled in a remote software development school that uses pair
+            real-world problems, I am a full-stack developer with a focus on front-end
+            development.
+            I am a graduate of Microverse, a remote software development school that uses pair
             programming and real-world projects to teach software development.
-            I am constantly improving my skills on a daily basis. If
+            I am presently helping a startup company as a front-end developer
+            to build their products to lunch.
+            I am constantly improving my skills daily. If
             you would like to get in contact about potential job opportunities, please
             reach out!
           </p>
@@ -26,7 +29,7 @@ export default function About() {
         </section>
 
       </header>
-      <div className="">
+      <div className="line-margin">
         <hr />
       </div>
       <section className="about-details">

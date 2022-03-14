@@ -3,6 +3,8 @@
   color: #fff;
   padding-top: 120px;
   padding-bottom: 120px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .about-bg {
@@ -71,6 +73,11 @@
   margin-right: 12px;
 }
 
+.line-margin {
+  margin-top: 22px;
+  margin-bottom: 120px;
+}
+
 @media screen and (min-width: 992px) {
   .about-bg {
     background-image: url("../assets/about-d.svg");
@@ -79,6 +86,11 @@
 
   .abt-size {
     padding-right: 100px;
+  }
+
+  .line-margin {
+    margin-top: 157px;
+    margin-bottom: 140px;
   }
 }
 
