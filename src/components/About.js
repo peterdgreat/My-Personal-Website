@@ -1,8 +1,8 @@
 import React from 'react';
-import Resume from '../assets/Peter-Ajayi-Resume.pdf';
 import '../styles/About.css';
 
 export default function About() {
+  const resume = 'https://docs.google.com/document/d/19SpLg9utM6swG8RyV8wtlHqN1rI7P8ORgePVqErs0CA/edit?usp=sharing';
   return (
     <div className="about" id="about">
       <header className="d-flex flex-column justify-content-start about-bg align-items-start">
@@ -22,7 +22,7 @@ export default function About() {
             reach out!
           </p>
           <div className="sp-btn">
-            <a href={Resume} download>
+            <a href={resume} target="_blank" rel="noreferrer">
               Get My Resume
             </a>
           </div>
