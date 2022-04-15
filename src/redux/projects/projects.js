@@ -21,7 +21,7 @@ const initialState = {
       btn: 'see project',
       img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650010822/p-smart-budget_kwgixm.png',
       source: 'https://github.com/peterdgreat/Crypto-Metrics',
-      live: 'https://crypto-metrics-d.netlify.app/',
+      live: 'https://smart-budgets-app.herokuapp.com/',
     },
     {
       id: '2',
