@@ -3,92 +3,12 @@
 import React from 'react';
 import '../styles/Projects.css';
 import { useSelector } from 'react-redux';
-// import ImageList from '@mui/material/ImageList';
-// import ImageListItem from '@mui/material/ImageListItem';
-// import ImageListItemBar from '@mui/material/ImageListItemBar';
-// import useMediaQuery from '@mui/material/useMediaQuery';
-// import { makeStyles } from '@material-ui/core/styles';
 import livedemo from '../assets/live.png';
 import github from '../assets/Vector.png';
-// import ModalC from './Modal';
 
-// const useStyles = makeStyles({
-//   spacing: {
-//     margin: '14px !important',
-//     gap: '24px !important',
-//   },
-//   seeProj: {
-//     backgroundColor: '#f55800 !important',
-//     minHeight: '30px !important',
-//     cursor: 'pointer',
-//     textAlign: 'center',
-//     '&:first-element-child': {
-//       padding: '0px !important',
-//     },
-//   },
-
-//   imgWrapper: {
-//     backgroundColor: '#3E3C3C !important',
-//   },
-//   img: {
-//     opacity: '0.5 !important',
-//     transition: 'all 0.5s ease-in-out',
-
-//     '&:hover': {
-//       opacity: '1 !important',
-//       animation: 'shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both',
-//       transform: 'translate3d(0, 0, 0)',
-//       perspective: '1000px',
-//     },
-//   },
-//   details: {
-//     position: 'absolute',
-//     transition: 'all 0.5s ease-in-out',
-//     '&:hover': {
-//       opacity: '0 !important',
-//     },
-//   },
-//   imgClass: {
-//     objectFit: 'contain !important',
-//   },
-//   modal: {
-//     background: 'transparent !important',
-//     opacity: '0.7 !important',
-//   },
-//   fallback: {
-//     backgroundColor: 'transparent !important',
-//     color: 'white',
-//     border: '3px solid #f1f1f1',
-//     maxWidth: '70%',
-//   },
-//   imgGrid: {
-//     gridTemplateColumns: 'repeat(3, 1fr) !important',
-//   },
-//   imgGridSm: {
-//     gridTemplateColumns: 'repeat(1, 1fr) !important',
-//   },
-// });
 export default function Project() {
   const projects = useSelector((state) => state.projectsReducer.projects);
   const mainProject = useSelector((state) => state.projectsReducer.mainProject);
-  // const [open, setOpen] = React.useState(false);
-  // const initialState = [];
-  // const [filtered, setFiltered] = React.useState(initialState);
-  // const handleOpen = (e) => {
-  //   setFiltered(
-  //     projects.filter((project) => project.id === e.currentTarget.id),
-  //   );
-
-  //   setOpen(true);
-  // };
-  // const handleClose = () => setOpen(false);
-  // const classes = useStyles();
-
-  // const matches = useMediaQuery('(min-width:900px)');
-  // const matchesTwo = useMediaQuery('(max-width:360px)');
-  // const mediaImg = matches ? classes.imgGrid : '';
-  // const mediaImgSm = matchesTwo ? classes.imgGridSm : '';
-
   return (
 
     <section className="m-container" id="project">
