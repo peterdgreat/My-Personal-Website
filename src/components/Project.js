@@ -8,6 +8,8 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
+import livedemo from '../assets/live.png';
+import github from '../assets/Vector.png';
 import ModalC from './Modal';
 
 const useStyles = makeStyles({
@@ -119,6 +121,18 @@ export default function Project() {
                   {lang}
                 </button>
               ))}
+            </div>
+            <div className="d-flex my-2">
+              <a href={mainProject.live} target="_blank" rel="noreferrer" className="mx-2 sp-btn">
+                <span className="me-2">See Live</span>
+                <img src={livedemo} alt="live" />
+              </a>
+
+              <a className="mx-2 sp-btn" href={mainProject.source} target="_blank" rel="noreferrer">
+                <span className="me-2">See Source</span>
+                <img src={github} alt="github" />
+              </a>
+
             </div>
           </section>
         </div>
