@@ -14,10 +14,10 @@ const initialState = {
   projects: [
     {
       id: '1',
-      title: 'Crypto Metrics',
+      title: 'Budget App',
       description:
-        'This is a web application that provides information about data in the cryptocurrency market. Users can see the current price of any available cryptocurrency coin.Users can see the market cap of any available cryptocurrency coin, and also filter the data based on the name search.',
-      langs: ['React', 'Css', 'Bootstrap', 'Redux'],
+        'This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      langs: ['Ruby On Rails', 'Css', 'Bootstrap', 'Devise'],
       btn: 'see project',
       img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650009911/p-crypto_ci8ewu.png',
       source: 'https://github.com/peterdgreat/Crypto-Metrics',
