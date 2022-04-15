@@ -112,9 +112,12 @@ export default function Project() {
             <p className="main-p-description">
               {mainProject?.description}
             </p>
-            <div>
+            <div className="d-flex mb-3 ">
               {mainProject.langs.map((lang) => (
-                <span key={lang}>{lang}</span>
+                <button type="button" className="btn border mx-2" key={lang}>
+                  {' '}
+                  {lang}
+                </button>
               ))}
             </div>
           </section>
