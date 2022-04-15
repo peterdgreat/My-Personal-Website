@@ -63,7 +63,7 @@ const initialState = {
         'This is Todo List app that alows users to organoze their day. It allows users to: Add a task. Remove a selected task. Mark a task as complete.',
       langs: ['Html', 'Css', 'JavaScript', 'Bootstrap'],
       btn: 'see project',
-      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933642/todo_a7uxnb.jpg',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650011806/p-todo_m3u209.png',
       source: 'https://github.com/peterdgreat/Todo-List',
       live: 'https://peterdgreat.github.io/Todo-List/dist/',
     },
