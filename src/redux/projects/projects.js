@@ -19,7 +19,7 @@ const initialState = {
         'This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
       langs: ['Ruby On Rails', 'Css', 'Bootstrap', 'Devise'],
       btn: 'see project',
-      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650009911/p-crypto_ci8ewu.png',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650010822/p-smart-budget_kwgixm.png',
       source: 'https://github.com/peterdgreat/Crypto-Metrics',
       live: 'https://crypto-metrics-d.netlify.app/',
     },
