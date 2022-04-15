@@ -1,17 +1,17 @@
 const PROJECT_SUCCESS = 'portfolio/projects/PROJECT_SUCCESS';
 
 const initialState = {
-  mainProject: {
-    id: '0',
-    title: 'Motors Reservations',
-    description: 'This is a website that allows users to make reservations for motorcycles. To make reservations, a user must be logged in. Users can also add to the list or delete from the list of motorcycles available.',
-    langs: ['React', 'Css', 'Bootstrap', 'Redux', 'Rails'],
-    btn: 'see project',
-    img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1647210189/motors_o0rvq1.png',
-    source: 'https://github.com/peterdgreat/motors-frontend',
-    live: 'https://motors-frontend-d-p-m.herokuapp.com/',
-  },
   projects: [
+    {
+      id: '0',
+      title: 'Motors Reservations',
+      description: 'This is a website that allows users to make reservations for motorcycles. To make reservations, a user must be logged in. Users can also add to the list or delete from the list of motorcycles available.',
+      langs: ['React', 'Css', 'Bootstrap', 'Redux', 'Rails'],
+      btn: 'see project',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1647210189/motors_o0rvq1.png',
+      source: 'https://github.com/peterdgreat/motors-frontend',
+      live: 'https://motors-frontend-d-p-m.herokuapp.com/',
+    },
     {
       id: '1',
       title: 'Budget App',

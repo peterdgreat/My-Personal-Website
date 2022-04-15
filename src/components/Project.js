@@ -8,7 +8,6 @@ import github from '../assets/Vector.png';
 
 export default function Project() {
   const projects = useSelector((state) => state.projectsReducer.projects);
-  const mainProject = useSelector((state) => state.projectsReducer.mainProject);
   return (
 
     <section className="m-container" id="project">
@@ -16,49 +15,6 @@ export default function Project() {
 
         <h2 className="work-h">My Recent Works  </h2>
       </header>
-      <section className="d-flex flex-column flex-md-row mb-3 justify-content-center">
-
-        <div className="img-wrapper px-2">
-
-          <img
-            src={mainProject.img}
-            alt={mainProject.title}
-            loading="lazy"
-            className="img-fluid"
-          />
-        </div>
-
-        <div className="px-2 pt-3 pt-md-0">
-          <section>
-            <h2 className="main-p-title">
-              {mainProject?.title}
-            </h2>
-            <p className="main-p-description">
-              {mainProject?.description}
-            </p>
-            <div className="d-flex mb-3 ">
-              {mainProject.langs.map((lang) => (
-                <button type="button" className="btn border mx-2" key={lang}>
-                  {' '}
-                  {lang}
-                </button>
-              ))}
-            </div>
-            <div className="d-flex my-2">
-              <a href={mainProject.live} target="_blank" rel="noreferrer" className="mx-2 sp-btn">
-                <span className="me-2">See Live</span>
-                <img src={livedemo} alt="live" />
-              </a>
-
-              <a className="mx-2 sp-btn" href={mainProject.source} target="_blank" rel="noreferrer">
-                <span className="me-2">See Source</span>
-                <img src={github} alt="github" />
-              </a>
-
-            </div>
-          </section>
-        </div>
-      </section>
 
       {
   projects.map((project) => (
