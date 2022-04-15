@@ -34,21 +34,21 @@ export default function Project() {
           <p className="main-p-description">
             {project?.description}
           </p>
-          <div className="d-flex mb-3 ">
+          <div className="d-flex mb-3 flex-wrap">
             {project?.langs.map((lang) => (
-              <button type="button" className="btn border mx-2" key={lang}>
+              <button type="button" className="btn border mx-1 mt-2" key={lang}>
                 {' '}
                 {lang}
               </button>
             ))}
           </div>
-          <div className="d-flex my-2">
-            <a href={project?.live} target="_blank" rel="noreferrer" className="mx-2 sp-btn">
+          <div className="d-flex  flex-wrap">
+            <a href={project?.live} target="_blank" rel="noreferrer" className="mx-2  my-2 sp-btn">
               <span className="me-2">See Live</span>
               <img src={livedemo} alt="live" />
             </a>
 
-            <a className="mx-2 sp-btn" href={project?.source} target="_blank" rel="noreferrer">
+            <a className="mx-2 sp-btn my-2" href={project?.source} target="_blank" rel="noreferrer">
               <span className="me-2">See Source</span>
               <img src={github} alt="github" />
             </a>
