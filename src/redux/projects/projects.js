@@ -63,7 +63,7 @@ const initialState = {
         "      This is a web app that provides information about cocktail recipes. It allows users to like their favorite cocktails, user's can also leave comments on the recipes.",
       langs: ['Html', 'Css', 'JavaScript', 'Bootstrap'],
       btn: 'see project',
-      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933594/cocktailjpg_hlfkrh.jpg',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650012267/p-cocktail_j3bhbc.png',
       source: 'https://github.com/peterdgreat/TheCocktail',
       live: 'https://rocio01.github.io/TheCocktail/',
     },
