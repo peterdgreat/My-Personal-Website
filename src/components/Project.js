@@ -112,11 +112,7 @@ export default function Project() {
             <p className="main-p-description">
               {mainProject?.description}
             </p>
-            <div
-              className="sp-btn"
-              id={mainProject.id}
-              onClick={handleOpen}
-            >
+            <div>
               {mainProject.langs.map((lang) => (
                 <span key={lang}>{lang}</span>
               ))}
