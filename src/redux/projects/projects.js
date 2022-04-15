@@ -19,7 +19,7 @@ const initialState = {
         'This is a web application that provides information about data in the cryptocurrency market. Users can see the current price of any available cryptocurrency coin.Users can see the market cap of any available cryptocurrency coin, and also filter the data based on the name search.',
       langs: ['React', 'Css', 'Bootstrap', 'Redux'],
       btn: 'see project',
-      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933619/Crypto_cun15q.jpg',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650009911/p-crypto_ci8ewu.png',
       source: 'https://github.com/peterdgreat/Crypto-Metrics',
       live: 'https://crypto-metrics-d.netlify.app/',
     },
