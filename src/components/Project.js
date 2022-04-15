@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import '../styles/Projects.css';
 import { useSelector } from 'react-redux';
@@ -18,26 +16,26 @@ export default function Project() {
 
       {
   projects.map((project) => (
-    <section key={project.title} className="d-flex flex-column flex-md-row mb-3 box-shadow justify-content-center">
+    <section key={project?.title} className="d-flex flex-column flex-md-row mb-3 justify-content-center">
       <div className="img-wrapper px-2">
 
         <img
-          src={project.img}
-          alt={project.title}
+          src={project?.img}
+          alt={project?.title}
           loading="lazy"
-          className="img-fluid"
+          className="img-fluid img-thumbnail"
         />
       </div>
       <div className="px-2 pt-3 pt-md-0">
         <section>
           <h2 className="main-p-title">
-            {project.title}
+            {project?.title}
           </h2>
           <p className="main-p-description">
-            {project.description}
+            {project?.description}
           </p>
           <div className="d-flex mb-3 ">
-            {project.langs.map((lang) => (
+            {project?.langs.map((lang) => (
               <button type="button" className="btn border mx-2" key={lang}>
                 {' '}
                 {lang}
@@ -45,12 +43,12 @@ export default function Project() {
             ))}
           </div>
           <div className="d-flex my-2">
-            <a href={project.live} target="_blank" rel="noreferrer" className="mx-2 sp-btn">
+            <a href={project?.live} target="_blank" rel="noreferrer" className="mx-2 sp-btn">
               <span className="me-2">See Live</span>
               <img src={livedemo} alt="live" />
             </a>
 
-            <a className="mx-2 sp-btn" href={project.source} target="_blank" rel="noreferrer">
+            <a className="mx-2 sp-btn" href={project?.source} target="_blank" rel="noreferrer">
               <span className="me-2">See Source</span>
               <img src={github} alt="github" />
             </a>
