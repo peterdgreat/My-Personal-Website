@@ -30,7 +30,7 @@ const initialState = {
         'A web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.',
       langs: ['React', 'Css', 'Bootstrap', 'Redux'],
       btn: 'see project',
-      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933633/Space-travellers_og8hkh.jpg',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650009911/p-crypto_ci8ewu.png',
       source: 'https://github.com/peterdgreat/Space-Travellers-Hub',
       live: 'https://space-travellers.netlify.app/',
     },
