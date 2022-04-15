@@ -20,7 +20,7 @@ const initialState = {
       langs: ['Ruby On Rails', 'Css', 'Bootstrap', 'Devise'],
       btn: 'see project',
       img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1650010822/p-smart-budget_kwgixm.png',
-      source: 'https://github.com/peterdgreat/Crypto-Metrics',
+      source: 'https://github.com/peterdgreat/Budget-App',
       live: 'https://smart-budgets-app.herokuapp.com/',
     },
     {
