@@ -18,7 +18,7 @@ export default function Project() {
 
       {
   projects.map((project) => (
-    <section key={project.title} className="d-flex flex-column flex-md-row mb-3 justify-content-center">
+    <section key={project.title} className="d-flex flex-column flex-md-row mb-3 box-shadow justify-content-center">
       <div className="img-wrapper px-2">
 
         <img
