@@ -117,7 +117,9 @@ export default function Project() {
               id={mainProject.id}
               onClick={handleOpen}
             >
-              {mainProject.btn}
+              {mainProject.langs.map((lang) => (
+                <span key={lang}>{lang}</span>
+              ))}
             </div>
           </section>
         </div>
