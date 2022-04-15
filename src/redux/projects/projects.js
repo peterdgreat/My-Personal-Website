@@ -47,17 +47,6 @@ const initialState = {
     },
     {
       id: '4',
-      title: 'Book Store',
-      description:
-        'This Bookstore displays a list of books. It allows users to add a book, and remove a selected book.',
-      langs: ['React', 'Css', 'Bootstrap', 'Redux'],
-      btn: 'see project',
-      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1639933581/books_nibytw.jpg',
-      source: 'https://github.com/peterdgreat/books-store',
-      live: 'https://p-books.netlify.app/',
-    },
-    {
-      id: '5',
       title: 'A Todo List',
       description:
         'This is Todo List app that alows users to organoze their day. It allows users to: Add a task. Remove a selected task. Mark a task as complete.',
@@ -68,7 +57,7 @@ const initialState = {
       live: 'https://peterdgreat.github.io/Todo-List/dist/',
     },
     {
-      id: '6',
+      id: '5',
       title: 'The Cocktail',
       description:
         "      This is a web app that provides information about cocktail recipes. It allows users to like their favorite cocktails, user's can also leave comments on the recipes.",
