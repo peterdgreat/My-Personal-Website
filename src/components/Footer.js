@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     textDecoration: 'none',
     minWidth: '0 !important',
   },
+  item: {
+    cursor: 'pointer',
+  },
 });
 
 export default function Footer() {
@@ -47,8 +50,8 @@ export default function Footer() {
   return (
     <div className="footer">
       {socialMedia.map((link) => (
-        <ListItem button key={link.id}>
-          <a href={link.url}>
+        <ListItem className={classes.item} button key={link.id}>
+          <a href={link.url} target="_blank" rel="noreferrer">
             <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
             <h5 className="text">{link.text}</h5>
           </a>
