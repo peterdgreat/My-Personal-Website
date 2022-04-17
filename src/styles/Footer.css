@@ -1,9 +1,19 @@
 .footer {
   background-color: #1c1a19;
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .socials {
+    flex-direction: row;
+  }
 }

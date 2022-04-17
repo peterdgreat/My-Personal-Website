@@ -49,14 +49,21 @@ export default function Footer() {
   ];
   return (
     <div className="footer">
-      {socialMedia.map((link) => (
-        <ListItem className={classes.item} button key={link.id}>
-          <a href={link.url} target="_blank" rel="noreferrer">
-            <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
-            <h5 className="text">{link.text}</h5>
-          </a>
-        </ListItem>
-      ))}
+      <div>
+        <h4 className="text-center">Check me out on social media platforms.</h4>
+      </div>
+      <section className="socials">
+        {socialMedia.map((link) => (
+
+          <ListItem className={classes.item} button key={link.id}>
+            <a href={link.url} target="_blank" rel="noreferrer">
+              <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
+              <h5 className="text">{link.text}</h5>
+            </a>
+          </ListItem>
+
+        ))}
+      </section>
     </div>
   );
 }
