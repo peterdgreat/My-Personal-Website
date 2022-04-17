@@ -11,7 +11,6 @@ export default function LandingPage() {
       <Project />
       <About />
       <Contact />
-
     </>
   );
 }
