@@ -11,6 +11,15 @@
   background-position: bottom right;
 }
 
+.headshot-container {
+  max-width: 250px;
+  max-height: 500px;
+}
+
+.headshot {
+  border-radius: 50%;
+}
+
 .name {
   font-family: 'Crete Round';
   font-style: normal;
@@ -48,7 +57,7 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .social {
@@ -92,11 +101,7 @@
 
 @media screen and (min-width: 992px) {
   .home {
-    padding: 192px 0 251px 0;
-  }
-
-  .home-bg {
-    background-image: url("../assets/background-d.png");
+    padding: 192px 0 251px 10px;
   }
 
   .section {
@@ -107,5 +112,9 @@
 @media screen and (min-width: 1200px) {
   .section {
     padding-right: 0;
+  }
+
+  .home-bg {
+    background-image: url("../assets/background-d.png");
   }
 }
