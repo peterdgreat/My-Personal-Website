@@ -7,6 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { makeStyles } from '@material-ui/core/styles';
 import medium from '../assets/medium.svg';
+import HeadShot from '../assets/slack.jpg';
 
 const useStyles = makeStyles({
   icon: {
@@ -46,8 +47,10 @@ export default function Hero() {
   ];
   return (
     <div className="home-bg w-100 ">
+      <div className="headshot-container">
+        <img className="headshot img-fluid" src={HeadShot} alt="headshot" />
+      </div>
       <div className=" w-100 h-100 d-flex align-items-start justify-content-end home ">
-
         <section className="d-flex flex-md-column s-container">
           {socialMedia.map((link) => (
             <ListItem button key={link.id}>
