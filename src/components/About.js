@@ -17,7 +17,7 @@ export default function About() {
             programming and real-world projects to teach software development.
             I am presently working at a startup company as a front-end developer
             to build their products to launch.
-            I am constantly improving my skills daily. If
+            I am constantly improving my skills. If
             you would like to get in contact about potential job opportunities, please
             reach out!
           </p>
