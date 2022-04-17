@@ -11,13 +11,13 @@ export default function About() {
           <p className="abt-size description">
             {' '}
             My biggest goal in life is to use software engineering to solve
-            real-world problems, I am a full-stack developer with a focus on front-end
-            development.
+            real-world problems, I am a full-stack developer focused on being
+            valuable on any team I am on.
             I am a graduate of Microverse, a remote software development school that uses pair
             programming and real-world projects to teach software development.
-            I am presently helping a startup company as a front-end developer
-            to build their products to lunch.
-            I am constantly improving my skills daily. If
+            I am presently working at a startup company as a front-end developer
+            to build their products to launch.
+            I am constantly improving my skills. If
             you would like to get in contact about potential job opportunities, please
             reach out!
           </p>
