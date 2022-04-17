@@ -11,6 +11,15 @@
   background-position: bottom right;
 }
 
+.headshot-container {
+  max-width: 250px;
+  max-height: 500px;
+}
+
+.headshot {
+  border-radius: 50%;
+}
+
 .name {
   font-family: 'Crete Round';
   font-style: normal;
@@ -48,7 +57,7 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .social {
