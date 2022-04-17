@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Footer.css';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -44,11 +45,12 @@ export default function Footer() {
     },
   ];
   return (
-    <div>
+    <div className="footer">
       {socialMedia.map((link) => (
         <ListItem button key={link.id}>
           <a href={link.url}>
             <ListItemIcon className={classes.icon}>{link.icon}</ListItemIcon>
+            <h5 className="text">{link.text}</h5>
           </a>
         </ListItem>
       ))}
