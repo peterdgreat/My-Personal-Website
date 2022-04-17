@@ -101,11 +101,7 @@
 
 @media screen and (min-width: 992px) {
   .home {
-    padding: 192px 0 251px 0;
-  }
-
-  .home-bg {
-    background-image: url("../assets/background-d.png");
+    padding: 192px 0 251px 10px;
   }
 
   .section {
@@ -116,5 +112,9 @@
 @media screen and (min-width: 1200px) {
   .section {
     padding-right: 0;
+  }
+
+  .home-bg {
+    background-image: url("../assets/background-d.png");
   }
 }
