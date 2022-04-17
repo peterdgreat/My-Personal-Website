@@ -67,7 +67,7 @@ export default function Hero() {
             <h3 className="title  ">I’am a Software Developer</h3>
             <div className="description  d-flex">
               <p>
-                I can help you build a product, feature, or website.
+                I can help you build a product, feature, or website from concept to launch.
                 Look through some of my work and experience!
                 If you like what you see and have a project you need coded,
                 don’t hesitate to contact me.
