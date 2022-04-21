@@ -37,6 +37,7 @@
     "react-router-dom": "^6.1.1",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
+    "react-tsparticles": "^2.0.6",
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
@@ -44,7 +45,8 @@
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",
     "stylelint-csstree-validator": "1.x",
-    "stylelint-scss": "3.x"
+    "stylelint-scss": "3.x",
+    "tsparticles": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
