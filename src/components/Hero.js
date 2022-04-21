@@ -10,7 +10,7 @@ export default function Hero() {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    particlesInit(container);
   };
   return (
     <div className="home-bg w-100 ">
