@@ -6,7 +6,6 @@ import HeadShot from '../assets/slack.jpg';
 
 export default function Hero() {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
