@@ -89,7 +89,7 @@ export default function Hero() {
         <section className="d-flex flex-md-column s-container">
           <section className=" d-flex justify-content-center w-100 align-items-center">
             <div className="headshot-container">
-              <img className="headshot img-fluid" src= "https://res.cloudinary.com/djbriv46g/image/upload/v1651149619/passport_l1jeej.jpg" alt="headshot" />
+              <img className="headshot img-fluid" src="https://res.cloudinary.com/djbriv46g/image/upload/v1651149619/passport_l1jeej.jpg" alt="headshot" />
             </div>
           </section>
         </section>
