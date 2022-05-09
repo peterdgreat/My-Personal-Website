@@ -3,6 +3,16 @@ const PROJECT_SUCCESS = 'portfolio/projects/PROJECT_SUCCESS';
 const initialState = {
   projects: [
     {
+      id: '00',
+      title: 'Photography Portfolio',
+      description: 'This is a portfolio single-page website for a photographer that allows admins to add, and delete images to the portfolio. Users can view, download, and filter images based on their category. Users can also talk to the photographer through a chat feature on their Whatsapp page.',
+      langs: ['React', 'CSS', 'Bootstrap', 'Redux', 'Rails', 'Styled-Component'],
+      btn: 'see project',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1652109387/dunamis_vu16ba.png',
+      source: 'https://github.com/peterdgreat/dunamis-front-end',
+      live: 'https://dunamis-photography.netlify.app/',
+    },
+    {
       id: '0',
       title: 'Motors Reservations',
       description: 'This is a website that allows users to make reservations for motorcycles. To make reservations, a user must be logged in. Users can also add to the list or delete from the list of motorcycles available.',
