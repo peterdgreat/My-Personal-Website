@@ -8,15 +8,11 @@ export default function Hero() {
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {
-    particlesInit(container);
-  };
   return (
     <div className="home-bg w-100 ">
       <Particles
         id="tsparticles"
         init={particlesInit}
-        loaded={particlesLoaded}
         options={{
           fpsLimit: 120,
           interactivity: {
