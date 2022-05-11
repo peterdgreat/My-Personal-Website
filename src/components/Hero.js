@@ -1,7 +1,11 @@
 import React from 'react';
 import '../styles/Hero.css';
 import Particles from 'react-tsparticles';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { loadFull } from 'tsparticles';
+import medium from '../assets/medium.svg';
 
 export default function Hero() {
   const particlesInit = async (main) => {
@@ -108,6 +112,17 @@ export default function Hero() {
           </div>
         </section>
       </div>
+      <section className="d-flex pb-5 justify-content-center ">
+        <div className="px-2">
+          <TwitterIcon className="social-icon" />
+        </div>
+        <div className="px-2" />
+        <LinkedInIcon className="social-icon" />
+        <div className="px-2" />
+        <GitHubIcon className="social-icon" />
+        <div className="px-4"><img className="icon social-icon mt-1" alt="medium" src={medium} /></div>
+
+      </section>
     </div>
   );
 }
