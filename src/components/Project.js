@@ -8,7 +8,7 @@ export default function Project() {
   const projects = useSelector((state) => state.projectsReducer.projects);
   return (
 
-    <section className="m-container" id="project">
+    <section className="container" id="project">
       <header className="title-header">
 
         <h2 className="work-h">My Recent Works  </h2>
@@ -16,8 +16,8 @@ export default function Project() {
 
       {
   projects.map((project) => (
-    <section key={project?.title} className="d-flex flex-column flex-md-row mb-3 justify-content-center">
-      <div className="img-wrapper px-2">
+    <section key={project?.title} className="row">
+      <div className="img-wrapper px-2 col-md-6 col-12">
 
         <img
           src={project?.img}
@@ -26,7 +26,7 @@ export default function Project() {
           className="img-fluid img-thumbnail"
         />
       </div>
-      <div className="px-2 pt-3 pt-md-0">
+      <div className="px-2 pt-3 pt-md-0 col-md-6 col-12">
         <section>
           <h2 className="main-p-title">
             {project?.title}
