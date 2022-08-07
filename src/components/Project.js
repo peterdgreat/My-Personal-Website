@@ -47,11 +47,12 @@ export default function Project() {
               <span className="me-2">See Live</span>
               <img src={livedemo} alt="live" />
             </a>
-
+            {project?.source && (
             <a className="mx-2 sp-btn my-2" href={project?.source} target="_blank" rel="noreferrer">
               <span className="me-2">See Source</span>
               <img src={github} alt="github" />
             </a>
+            )}
 
           </div>
         </section>
