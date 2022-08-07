@@ -14,17 +14,17 @@ export default function Contact() {
       <section className=" p-container m-container contact-form d-flex flex-column flex-lg-row" id="contact-section">
         <div className="interest">
           {state.succeeded && (
-          <h2>Thanks for reaching out! I will get back to you as soon as possible</h2>
+          <h2 data-aos="fade-right">Thanks for reaching out! I will get back to you as soon as possible</h2>
           )}
           {state.succeeded === false && (
-          <h2>
+          <h2 data-aos="fade-right">
             I am always interested in hearing about new projects, so if you would
             like to chat please get in touch.
           </h2>
           )}
         </div>
         <div className="w-100 ">
-          <form className="form w-100" onSubmit={handlesubmit}>
+          <form data-aos="fade-left" className="form w-100" onSubmit={handlesubmit}>
             <ul className="list-unstyled">
               <li className="border-bottom">
                 <input

@@ -89,7 +89,11 @@ export default function Hero() {
         <section className="d-flex flex-md-column s-container">
           <section className=" d-flex justify-content-center w-100 align-items-center">
             <div className="headshot-container">
-              <img className="headshot img-fluid" src="https://res.cloudinary.com/djbriv46g/image/upload/v1651149619/passport_l1jeej.jpg" alt="headshot" />
+              <img
+                className="headshot img-fluid"
+                src="https://res.cloudinary.com/djbriv46g/image/upload/v1651149619/passport_l1jeej.jpg"
+                alt="headshot"
+              />
             </div>
           </section>
         </section>
@@ -103,10 +107,10 @@ export default function Hero() {
             <h3 className="title  ">I’am a Software Developer</h3>
             <div className="description  d-flex">
               <p>
-                I am a full stack developer with a passion for building beautiful,
-                intuitive, and responsive user interfaces.
-                I can help you build a product, feature, or website from concept to launch.
-
+                I am a full stack developer with a passion for building
+                beautiful, intuitive, and responsive user interfaces. I am an
+                experienced developer that helps startups to build their product
+                from concept to launch.
               </p>
             </div>
           </div>
@@ -120,8 +124,9 @@ export default function Hero() {
         <LinkedInIcon className="social-icon" />
         <div className="px-2" />
         <GitHubIcon className="social-icon" />
-        <div className="px-4"><img className="icon social-icon mt-1" alt="medium" src={medium} /></div>
-
+        <div className="px-4">
+          <img className="icon social-icon mt-1" alt="medium" src={medium} />
+        </div>
       </section>
     </div>
   );
