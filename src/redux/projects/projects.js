@@ -3,6 +3,15 @@ const PROJECT_SUCCESS = 'portfolio/projects/PROJECT_SUCCESS';
 const initialState = {
   projects: [
     {
+      id: '000',
+      title: 'Trixie Group',
+      description: 'This is a webapp for a company that provides commercial, industrial and Schools customized security solutions',
+      langs: ['React', 'CSS', 'Bootstrap', 'Styled-Component'],
+      btn: 'see project',
+      img: 'https://res.cloudinary.com/djbriv46g/image/upload/v1659877040/trixie-o_dlynwy.png',
+      live: 'https://dev.trixiegroup.com/',
+    },
+    {
       id: '00',
       title: 'Photography Portfolio',
       description: 'This is a portfolio single-page website for a photographer that allows admins to add, and delete images to the portfolio. Users can view, download, and filter images based on their category. Users can also talk to the photographer through a chat feature on their Whatsapp page.',
