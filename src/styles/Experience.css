@@ -1,0 +1,49 @@
+.experience {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px 20px; /* Padding around the content */
+  margin: 20px 0; /* Margin to separate from other sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.experience h2 {
+  font-family: 'Inter', sans-serif; /* Consistent font */
+  font-size: 36px; /* Larger font size for the heading */
+  color: #172b4d; /* Dark color for the heading */
+  text-align: center; /* Center the heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.experience-item {
+  margin-bottom: 20px; /* Space between experience items */
+  padding: 20px; /* Padding inside each item */
+  background-color: #fff; /* White background for each item */
+  border-radius: 5px; /* Rounded corners for items */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+}
+
+.experience-item h3 {
+  font-family: 'Inter', sans-serif; /* Consistent font */
+  font-size: 24px; /* Font size for job title */
+  color: #ff6b00; /* Highlight color for job title */
+  margin: 0; /* Remove default margin */
+}
+
+.experience-item p {
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  font-size: 16px; /* Font size for job details */
+  color: #555; /* Dark gray for text */
+  margin: 5px 0 15px; /* Margin for spacing */
+}
+
+.experience-item ul {
+  list-style-type: disc; /* Bullet points for list */
+  padding-left: 20px; /* Indent the list */
+}
+
+.experience-item li {
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  font-size: 16px; /* Font size for list items */
+  color: #333; /* Darker color for list items */
+  margin-bottom: 5px; /* Space between list items */
+}
