@@ -31,7 +31,12 @@
     ],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "max-len": "off", // Disable line length rule
+    "no-multi-spaces": "off", // Disable trailing spaces rule
+    "indent": "off"
+     
   },
   "ignorePatterns": [
     "dist/",

@@ -86,17 +86,6 @@ export default function Hero() {
         }}
       />
       <div className=" w-100 h-100 d-flex align-items-start justify-content-end home ">
-        <section className="d-flex flex-md-column s-container">
-          <section className=" d-flex justify-content-center w-100 align-items-center">
-            <div className="headshot-container">
-              <img
-                className="headshot img-fluid"
-                src="https://res.cloudinary.com/djbriv46g/image/upload/v1651149619/passport_l1jeej.jpg"
-                alt="headshot"
-              />
-            </div>
-          </section>
-        </section>
         <section className="d-flex flex-column w-100 ">
           <div className="section m-container">
             <h2 className="name  ">
@@ -107,10 +96,9 @@ export default function Hero() {
             <h3 className="title  ">I’am a Software Developer</h3>
             <div className="description  d-flex">
               <p>
-                I am a full stack developer with a passion for building
-                beautiful, intuitive, and responsive user interfaces. I am an
-                experienced developer that helps startups to build their product
-                from concept to launch.
+                Results-driven Full-Stack Web Developer with expertise in Ruby,
+                JavaScript, and Docker. Passionate about building scalable applications and delivering clean,
+                maintainable code.
               </p>
             </div>
           </div>

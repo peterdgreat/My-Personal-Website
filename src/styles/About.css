@@ -11,10 +11,9 @@
 }
 
 .about-bg {
-  background-image: url("../assets/about-m.png");
+ 
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding-bottom: 150px;
 }
 
 .technologies {
@@ -82,10 +81,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .about-bg {
-    background-image: url("../assets/about-d.svg");
-    padding-bottom: 160px;
-  }
+
 
   .abt-size {
     padding-right: 100px;
