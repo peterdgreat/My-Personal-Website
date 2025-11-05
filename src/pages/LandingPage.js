@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Modern.css';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Contact from '../components/Contact';

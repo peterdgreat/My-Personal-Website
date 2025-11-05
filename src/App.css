@@ -1,12 +1,27 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Crete Round');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Crete+Round');
 
 * {
   overflow-x: hidden;
 }
 
 body {
-  background-color: #fff !important;
+  background-color: #121212 !important;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3700b3;
 }
 
 .css-10h3uxi {
@@ -55,6 +70,6 @@ a:any-link {
   border-radius: 2px;
   text-decoration: none;
   font-family: "Inter";
-  background-color: #ff6b00;
+  background-color: #bb86fc;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }

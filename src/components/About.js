@@ -17,30 +17,30 @@ export default function About() {
           <li>
             <h4 data-aos="fade-right">
               <span className="kite" />
-              Language
+              Languages
               {' '}
             </h4>
             <ul data-aos="fade-left" className="list-unstyled">
-              <li>Javascript</li>
-              <li>Typescript</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>Ruby</li>
-              <li>Html</li>
-              <li>Css</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
           </li>
           <li>
             <h4 data-aos="fade-right">
               <span className="sqr" />
-              Frameworks
+              Frameworks & Libraries
             </h4>
             <ul data-aos="fade-left" className="list-unstyled">
               <li>React</li>
               <li>Angular</li>
-              <li>Materia Ui</li>
+              <li>Material UI</li>
               <li>Angular Material</li>
               <li>Bootstrap</li>
-              <li>RSPec</li>
-              <li>Ruby on rails</li>
+              <li>RSpec</li>
+              <li>Ruby on Rails</li>
             </ul>
           </li>
           <li>
@@ -50,9 +50,9 @@ export default function About() {
               {' '}
             </h4>
             <ul data-aos="fade-left" className="list-unstyled">
-              <li>Team Work</li>
+              <li>Teamwork</li>
               <li>Mentoring</li>
-              <li>Pair Programming</li>
+              <li>Pair-Programming</li>
               <li>Github</li>
               <li>Terminal</li>
             </ul>

@@ -11,7 +11,7 @@ export default function Project() {
     <section className="container" id="project">
       <header className="title-header">
 
-        <h2 data-aos="fade-left" className="work-h">My Recent Works  </h2>
+        <h2 data-aos="fade-left" className="work-h">My Recent Work  </h2>
       </header>
 
       {

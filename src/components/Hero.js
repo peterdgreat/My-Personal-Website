@@ -89,16 +89,16 @@ export default function Hero() {
         <section className="d-flex flex-column w-100 ">
           <div className="section m-container">
             <h2 className="name  ">
-              Hey There.
+              Hey there,
               <br />
               I’m Peter
             </h2>
-            <h3 className="title  ">I’am a Software Developer</h3>
+            <h3 className="title  ">I am a Software Developer</h3>
             <div className="description  d-flex">
               <p>
-                Results-driven Full-Stack Web Developer with expertise in Ruby,
-                JavaScript, and Docker. Passionate about building scalable applications and delivering clean,
-                maintainable code.
+                I’m a software developer! I can help you build a product, feature or website.
+                Look through some of my work and experience! If you like what you see and have a project you need coded,
+                don’t hesitate to contact me.
               </p>
             </div>
           </div>
